@@ -1,0 +1,131 @@
+.report-setting-bar {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    margin-left: 500px;
+    top: 300px;
+    font-size: 20px;
+    color: #666;
+
+    .setting-item {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 5px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 7px;
+        background-color: #fff;
+    }
+}
+
+.setting-warp {
+    position: fixed;
+    left: 50%;
+    z-index: 2;
+    top: 320px;
+    margin-left: 400px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    width: 180px;
+    height: 230px;
+}
+
+.setting-modal-body {
+    min-height: 190px;
+    padding-top: 10px;
+    position: relative;
+
+
+    .report-setting-row {
+        padding-left: 15px;
+    }
+
+    .name {
+        display: inline-block;
+        padding-right: 10px;
+        color: #333;
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    label {
+        font-weight: normal;
+        font-size: 14px;
+        margin: 0px;
+        line-height: 24px;
+        color: #333;
+        display: block;
+    }
+
+
+
+    input {
+        position: relative;
+        top: -2px;
+        margin: 0 5px 0 20px;;
+    }
+
+    .radio-span {
+        $size: 16px;
+        height: $size;
+        width: $size;
+        border-radius: 50%;
+        border: 1px solid #cdcdcd;
+        display: inline-block;
+        position: relative;
+        vertical-align: sub;
+        margin-right: 5px;
+        .inner {
+            width: $size/2;
+            height: $size/2;
+            position: absolute;
+            background: #cdcdcd;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            margin-left: -4px;
+            margin-top: -4px;
+            transition: background 0.25s linear;
+            -webkit-transition: background 0.25s linear;
+        }
+    }
+
+    input[type="radio"] {
+        display: none;
+        &:checked {
+            & + .radio-span > .inner {
+                background: #fdab23;
+            }
+        }
+    }
+}
+
+.modal-foot {
+    padding-left: 25px;
+    .jd-btn {
+        margin: 0px 5px;
+    }
+}
+
+.triangle-right {
+    position: absolute;
+    right: -11px;
+    top: 20px;
+}
+.shortcutBox-btn {
+    @extend .shortcutBox;
+    top: 320px;
+}
+
+.hover-active {
+    &:hover {
+        .active-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            color: #000;
+            border-radius: 5px;
+        }
+    }
+}

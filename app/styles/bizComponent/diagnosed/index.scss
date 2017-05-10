@@ -1,0 +1,212 @@
+.card-panel {
+    width: 470px;
+    .panel-head {
+        display: none;
+    }
+}
+.pdf-panel {
+    padding: 20px;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    background: white;
+    .pdf-head {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .pdf-link {
+        font-size: 20px;
+        float: right;
+        margin-left: -120px;
+        margin-top: 10px;
+    }
+    .pdf-item {
+        margin: 10px 0;
+    }
+}
+.dia-select-info {
+    color: #666;
+    font-size: 12px;
+    margin: 0px;
+    margin-right: 100px;
+    display: block;
+    margin-top: 7px;
+    margin-right: 107px;
+    text-align: right;
+}
+.prev-link {
+    color: #666;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.btn-dropbox {
+    position: absolute;
+    border-radius: 3px;
+    top: 35px;
+    left: 0px;
+    height: auto;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.15)!important;
+    background: white;
+    .item {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        border: none;
+        height: auto;
+        text-align: left;
+        border-top: none;
+        line-height: 1em;
+        color: rgba(0,0,0,.87);
+        padding: .78571429rem 1.14285714rem!important;
+        font-size: 1rem;
+        text-transform: none;
+        font-weight: 400;
+        box-shadow: none;
+        &:hover {
+            background: rgba(0,0,0,.05);
+            color: rgba(0,0,0,.95);
+            z-index: 13
+        }
+    }
+}
+.card-body {
+    padding: 0px 30px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 20px;
+    .card-img {
+        margin-bottom: 14px;
+        margin-right: 10px;
+        float: left;
+    }
+    .card-title {
+        font-size: 20px;
+        color: #222;
+        float: left;
+        line-height: 60px;
+        margin: 0px;
+    }
+    .card-detail {
+        width: 100%;
+        display: inline-block;
+        font-size: 14px;
+        color: #222;
+        .card-detail-label {
+            width: 70px;
+            float: left;
+            line-height: 26px;
+            margin-bottom: 5px;
+        }
+        .card-detail-text {
+            width: 338px;
+            line-height: 26px;
+            float: left;
+            margin-bottom: 5px;
+        }
+        .card-detail-red {
+            color: #fb5959;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .card-info {
+        font-size: 14px;
+        color: #666;
+        line-height: 26px;
+    }
+    .card-info-sm {
+        @extend .card-info;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        clear: both;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    .card-btn {
+        float: left;
+        margin: 20px 0px 10px 163px;
+    }
+    .dd-panel {
+        width: 412px;
+        background: #eee;
+        overflow: hidden;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .card-error-msg {
+            color: #fb5959;
+            padding: 0px 10px;
+        }
+        .dd-row {
+            display: inline-block;
+            width: 100%;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin: 10px 0px;
+            label {
+                width: 60px;
+                font-weight: normal;
+            }
+            input {
+                width: 215px;
+                height: 30px;
+                border: 1px solid #ccc;
+                bpackground: white;
+                outline: none;
+                padding: 0px 5px;
+                line-height: 30px;
+            }
+            &:first-child {
+                input {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+    .dd-panel-hide {
+        display: none;
+    }
+}
+
+.pdf-img {
+    -moz-box-shadow:0px 5px 17px #999;
+    -webkit-box-shadow:0px 5px 17px #999;
+    box-shadow:0px 5px 17px #999;
+}
+.demo-pdf {
+    .pdf-img {
+        width: 440px;
+        margin: 10px;
+    }
+}
+.report-card-item-box {
+    -moz-box-shadow:0px 5px 17px #999;
+    -webkit-box-shadow:0px 5px 17px #999;
+    box-shadow:0px 5px 17px #999;
+}
+.report-card-md  {
+    &:hover {
+        @extend .report-card-item-box;
+    }
+}
+.report-card-lg  {
+    &:hover {
+        @extend .report-card-item-box;
+    }
+}
+.report-card-lg-md  {
+    &:hover {
+        @extend .report-card-item-box;
+    }
+}

@@ -1,0 +1,17 @@
+@import './title';
+@import './grade';
+@import './list';
+@import './lock';
+
+.internal-dialog {
+    .content {
+        margin-top: 215px;
+        padding-bottom: 50px;
+    }
+
+    .tip-container {
+        color: #333;
+        font-size: 13px;
+        margin: 0 100px 50px;
+    }
+}

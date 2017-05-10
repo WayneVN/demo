@@ -1,0 +1,77 @@
+.ratio-warp {
+  position: relative;
+  display: inline-block;
+  width: 850px;
+  .year-ctrl {
+    float: right;
+    font-size: $base-font-size;
+    color:$color-table-head;
+    ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        .active {
+          color:$color-org;
+        }
+      }
+    }
+    .disabled {
+      color:$color-grey;
+      cursor: not-allowed;
+    }
+  }
+  .chart-ratio {
+    width: 500px;
+    min-height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    z-index: 2;
+    border-top: 2px solid #cfd5e1;
+  }
+  .react-bs-container {
+    .table {
+      thead {
+        tr {
+          th {
+            border-bottom: 1px solid #cfd5e1;
+            .table-header-column {
+              font-size: 14px;
+              border: none;
+            }
+          }
+          th:nth-child(1) {
+            .table-header-column {
+              width: 40px;
+              border: none;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            width: 200px;
+            height: 30px;
+            padding: 0;
+            text-align: center;
+            color:$color-base-font;
+          }
+          td:nth-child(1) {
+            width: 30px;
+            padding-left: 16px;
+            // border-right: 1px solid #cfd5e1;
+          }
+          td:nth-child(2) {
+            padding-left: 20px;
+          }
+          td:nth-child(3) {
+            width: 120px;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}

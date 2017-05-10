@@ -1,0 +1,53 @@
+.spring-userinfo {
+  display: inline-block;
+  .s-line-group {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 233px;
+    .s-clazz-label {
+        text-align: center;
+        display: block;
+    }
+    .s-clazz-p {
+        text-align: center;
+    }
+    .s-clazz-warp {
+        float: right;
+        margin-top: -80px;
+        margin-right: -150px;
+        color: #d6d6d6;
+        .s-clazz-img {
+            width: 145px;
+        }
+    }
+    .s-line-type {
+        float: left;
+    }
+    .s-line-link {
+        color: #284a7d;
+        float: left;
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 26px;
+        text-decoration: underline;
+    }
+  }
+}
+.lock-row {
+    opacity: .5;
+    background-color: #000;
+    z-index: 1;
+    width: 834px;
+    height: 47px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+.lock-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 398px;
+    z-index: 2;
+    top: 4px;
+}

@@ -1,0 +1,268 @@
+
+// color
+$color-head-blue: #357cbe;
+$color-head-font:#d0d6df;
+$color-foot-back:#2e3744;
+$color-foot-font:#989b9f;
+$color-body-grey:#f9fbff;
+$color-border-grey:#e4e8f2;
+$color-white:#fff;
+$color-black:#333;
+$color-grey:#999;
+$color-panel-title:#ccc;
+$color-base-font:#666;
+$color-font-grey: $color-grey;
+$color-org:#fbaa2a;
+$color-orange:#ffab36;
+$color-btn-border:#ebebeb;
+$color-yellow:#ffcf00;
+$color-nav-menu:#ffae00;
+$color-tab-font:#ccc;
+$color-red:#fb6969;
+$color-error:#fb6969;
+$color-account-red:#fb6969;
+$color-green:#42ca73;
+$color-blue:#284a7d;
+$color-table-bg:#f6f6f7;
+$color-slider-bg:#f4f7fd;
+$color-wb-grey:#f2f2f5;
+$color-disabled:#c2c2c2;
+$color-page-border:#e5e5e5;
+$color-tr-bg:#fdfefe;
+$color-modal-border:#d9dbdd;
+$color-input-bg :#fafbfe;
+$color-btn-grey :#e2e2e2;
+$color-round:#68b7f1;
+$color-tip-green:#84cea8;
+$color-text-bg:#f8fcff;
+$color-a-blue:#284a7b;
+$color-title: #555555;
+$color-text-gray:#777777;
+$color-bg-gray: #666666;
+$color-bg-blue: #284a7d;
+
+//dialog
+$color-dialog-title:#666666;
+$color-dialog-lable:#666666;
+$color-dialog-input: $color-grey;
+$color-dialog-msg: $color-grey;
+$color-dialog-but:#ff742f;
+$color-dialog-but-bg-disable:#d5d5d5;
+$color-dialog-but-disable:#ffffff;
+$color-progress-bg:#ffeed7;
+$color-progress:#ffab36;
+$color-progress-text:#666666;
+$color-progress-msg:#777777;
+$size-dialog-title:24px;
+$size-dialog-lable:16px;
+$size-dialog-input:26px;
+$size-dialog-msg:16px;
+$size-progress-text:36px;
+$size-progress-msg:16px;
+//dialog End
+
+
+// tally
+$color-tally-bg:#e3e9f7;
+$color-tally-btn:#6e8ebf;
+// tally-index-page
+$color-card-bg:#eef1f8;
+$color-table-head:#274982;
+$color-even-row:#f4f4f4;
+$color-table-border:#e6f0f9;
+$color-table-font:#3876bd;
+$color-step-panel:#f9f9f9;
+// margin-padiing
+
+// size
+$base-font-size:14px;
+
+
+$color-banner-active :#0161b7;
+$color-banner: #6e97c9;
+
+
+$color-tag-border: #c9e3d7;
+$color-tag-text: #a1cbc1;
+
+//btn
+$color-btn-org-hover: #fdb949;
+$color-btn-org-active: #fdbe00;
+
+$size-tag-text: 14px;
+$heading-font-family :'PingFang SC', 'Microsoft YaHei',PingHei, 'Helvetica Neue', Helvetica, STHeitiSC-Light, Arial, sans-serif,'Wenquanyi Micro Hei';
+body {
+  padding: 0 !important;
+  -webkit-font-smoothing:antialiase;
+  font-family: $heading-font-family;
+  // font-family: 'PingFang','Open Sans', 'Neue Frutiger', 'Frutiger Next', Frutiger, 'Myriad Pro', Myriad, 'San Francisco', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Verdana, 'Source Han Sans CN', 'PingFang SC', 'Hiragino Sans GB', 'Wenquanyi Micro Hei', 'Microsoft YaHei', sans-serif;
+}
+a {
+    color:inherit;
+    outline: none;
+}
+.p20 {
+  padding: 20px !important;
+}
+.m20 {
+  margin: 20px !important;
+}
+.ml-10{
+  margin-left: 10px !important;
+}
+.ml-20 {
+  margin-left: -20px !important;
+}
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mr10 {
+  margin-right: 10px !important;
+}
+.ml-100 {
+  margin-left: -100px;
+}
+.ml120 {
+  margin-left: 120px !important;
+}
+.ml20{
+  margin-left: 20px !important;
+}
+.ml30{
+  margin-left: 30px !important;
+}
+.m0 {
+  margin: 0 !important;
+}
+
+.color-bule {
+  color: $color-blue;
+}
+.color-org {
+  color: $color-orange;
+}
+.color-orange {
+  color: $color-orange;
+}
+.color-error {
+  color:$st-color-red !important;
+}
+.color-grey {
+  color:$color-disabled;
+}
+.color-green {
+  color:$color-tip-green !important;
+}
+.color-up { //涨
+  color:$st-color-red !important;
+}
+.color-down { //跌
+  color:$color-tip-green !important;
+}
+.bg-up { //背景涨
+  background-color:$st-color-red;
+}
+.bg-down {//背景跌
+  background-color:$color-tip-green;
+}
+.bg-blue {
+  background-color:$color-bg-blue;
+}
+.bg-orange {
+  line-height: 39px;
+  background-color: $color-orange;
+}
+.tr-up { //tr涨提示
+  background-color:$st-color-red-light !important;
+  opacity: 0.8;
+  td {
+    //color: #fff !important;;
+  }
+}
+.tr-down { // tr跌提示
+  background-color:$st-color-green-light !important;
+  opacity: 0.8;
+  td {
+    //color: #fff !important;;
+  }
+}
+.fll {
+  float: left;
+}
+.flr {
+  float: right !important;
+}
+.por {
+  position: relative;
+}
+.bn{
+  border: none !important;
+}
+.tac{
+  text-align: center;
+}
+.tal{
+  text-align: left;
+}
+.tar{
+  text-align: right;
+}
+.fwb {
+    font-weight: bold !important;
+}
+.fwn {
+    font-weight: normal !important;
+}
+.fs14 {
+  font-size: 14px;
+}
+.curp {
+    cursor: pointer;
+}
+.cur-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: sub;
+}
+.cur-icon-sm {
+    @extend .cur-icon;
+    width: 16px;
+    height: 16px;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.center {
+  text-align: center;
+}
+@mixin ease($time) {
+  -moz-transition:   $time ease;
+  -o-transition:   $time ease;
+  -webkit-transition:  $time ease;
+  transition: $time ease;
+}
+
+@mixin horizontal-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin box-sizing() {
+    /* ie8.0+ 兼容 */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.color7 {
+  color: $color-progress-msg;
+}

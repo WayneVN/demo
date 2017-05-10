@@ -1,0 +1,88 @@
+$bar-color:#dce0e0;
+.rc-slider {
+  width: 100%;
+  // 宽度超过400，筛选条就对不齐了
+  max-width: 410px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  top:13px;
+  .bar {
+    height: 3px;
+    background-color: $bar-color;
+    border-radius: 5px;
+  }
+  .bar-active {
+  }
+  .handle {
+    height: 15px;
+    width: 6px;
+    top:-7px;
+    background-image: url('~!file!../images/sliderBar.png');
+    &:hover , &:active {
+      // @extend .bar-active;
+    }
+  }
+  .num-handle {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -17px;
+  }
+}
+.rc-slider-sm {
+  margin-left: -10px;
+  width: 150px;
+}
+.slider {
+  height: 8px;
+  width: 400px;
+  border-bottom: -10px;
+  margin-left: 5px;
+  .bg-bar {
+    width: inherit;
+    height: 1px;
+    border-radius: 10px;
+    position: relative;
+    .bg-density {
+      $offect:30px;
+      position: absolute;
+      width: inherit;
+      height: $offect;
+      top: -10px;
+      .bg-density-children {
+        width: 2px;
+        height: 15px;
+        margin-right: 2px;
+        background-color: $bar-color;
+        border-radius: 10px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .bg-density-sm {
+      @extend .bg-density;
+      margin-left: -10px;
+      .bg-density-children {
+        width: 1px;
+      }
+    }
+
+    .handle{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid $color-org;
+      background-color: $color-white;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
+    .handle-left {
+      left: 0;
+    }
+    .handle-right {
+      right:0;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.chart-modal-lg {
+    width: 960px;
+    height: 100%;
+    .modal-content {
+        border-radius: 0px;
+        -webkit-box-shadow: 0 0px 6px #fff;
+        box-shadow: 0 0px 6px #fff;
+        border: none;
+        top: 50%;
+        bottom: 50%;
+        margin-top: -258px;
+    }
+
+}
+.bigChart-panel {
+    $w: 960px;
+    $p: 40px;
+    .bigChart-panel-head {
+        $h: 95px;
+        width: $w;
+        height: $h;
+        padding: 0px $p;
+        position: relative;
+        /* overflow: hidden; */
+        .fa-remove {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 20px;
+            color: #999;
+            transition: 0.25s ease;
+            cursor: pointer;
+            &:hover {
+                color: #444;
+            }
+        }
+        .bigChart-panel-title {
+            font-size: 20px;
+            margin-right: 20px;
+            line-height: $h;
+        }
+        .bigChart-panel-subtitle {
+            font-size: 16px;
+            margin-right: 20px;
+            margin-left: -20px;
+            line-height: $h;
+            color: #999;
+        }
+        .bigChart-panel-num {
+            font-size: 26px;
+            color: #333;
+            line-height: $h;
+        }
+        .bigChart-panel-num-down {
+            font-size: 26px;
+            color: #65CD6B;
+            line-height: $h;
+        }
+        .bigChart-panel-num-up {
+            font-size: 26px;
+            color: #fb5959;
+            line-height: $h;
+        }
+        .date-item {
+            $h: 28px;
+            height: $h;
+            line-height: 26px;
+            min-width: 110px;
+            font-size: 16px;
+            padding: 0 10px;
+            margin-right: 10px;
+            margin-top: 40px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        /* 日了狗的日历组件 */
+        .daterangepicker {
+            top: 100px !important;
+            right: 10px !important;
+            left: 435px !important;
+            position: absolute;
+        }
+    }
+    .bigChart-panel-body {
+        width: $w;
+        height: 420px;
+        padding: 20px;
+        position: relative;
+        .icon-line {
+            display: inline-block;
+            margin-left: 373px;
+        }
+        .icon-label {
+            margin-right: 20px;
+            float: left;
+            .iconfont {
+                color: #666;
+                margin-right: 5px;
+            }
+        }
+        .icon-label-right {
+            float: left;
+            .iconfont {
+                color: #666;
+                margin-right: 5px;
+            }
+        }
+        .bigChart-top-text {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -22px;
+            font-size: 30px;
+            color: #15305b;
+        }
+        .bigChart-bottom-num {
+            position: absolute;
+            font-size: 26px;
+            font-weight: bold;
+            color: #323257;
+            bottom: 120px;
+            width: 920px;
+            text-align: center;
+        }
+        .bigChart-bottom-text {
+            position: absolute;
+            color: #15305b;
+            font-size: 20px;
+            bottom: 90px;
+            width: 920px;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+}
+.cost-tool {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 12px;
+    .cost-tool-btn {
+        float: left;
+        span {
+            float: left;
+        }
+        margin: 0px 8px;
+    }
+    .btn-block {
+        width: 20px;
+        height: 10px;
+        margin-top: 5px;
+        margin-right: 5px;
+        border-radius: 3px;
+        display: block;
+    }
+}

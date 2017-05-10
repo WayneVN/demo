@@ -1,0 +1,11 @@
+@import './title';
+@import './loading';
+@import './grade';
+
+.msg-dialog {
+    .grade-tip {
+        table {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.level-block {
+    background-color: #fff;
+    width: 220px;
+    border: $st-border;
+    padding: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid #666;
+    }
+    .level-bar {
+        width: 8px;
+        height: 50px;
+        float: right;
+        border: $st-border;
+        background-color: #e4e4e4;
+        position: relative;
+        .level-bar-child {
+            position: absolute;
+            width: 4px;
+            left: 1px;
+            bottom: 1px;
+        }
+    }
+    .level-panel {
+        border: $st-border;
+        width: 200px;
+        font-size: 12px;
+        div {
+            line-height: 24px;
+            height: 24px;
+            padding: 0 10px;
+        }
+        .color-line {
+            color: #fff;
+            background-color: #666;
+        }
+        .right {
+            float: right;
+        }
+    }
+    &.level-block-0 {
+        .color-line {
+            background-color: #fa5c5c;
+        }
+        .level-bar-child {
+            height: 100%;
+            background-color: #fa5c5c;
+        }
+        &:hover {
+            border: 2px solid #fa5c5c;
+        }
+    }
+    &.level-block-1 {
+        .color-line {
+            background-color: #d75e5e;
+        }
+        .level-bar-child {
+            height: 75%;
+            background-color: #d75e5e;
+        }
+        &:hover {
+            border: 2px solid #d75e5e;
+        }
+    }
+    &.level-block-2 {
+        .color-line {
+            background-color: #a66162;
+        }
+        .level-bar-child {
+            height: 50%;
+            background-color: #a66162;
+        }
+        &:hover {
+            border: 2px solid #a66162;
+        }
+    }
+    &.level-block-3 {
+        .color-line {
+            background-color: #666;
+        }
+        .level-bar-child {
+            height: 25%;
+            background-color: #666;
+        }
+        &:hover {
+            border: 2px solid #666;
+        }
+    }
+}

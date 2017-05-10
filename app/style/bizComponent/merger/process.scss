@@ -1,0 +1,693 @@
+.merger-dialog {
+    .process-container {
+        
+        .code-container {
+            width: 250px;
+            color: $st-color-orange;
+            padding: 10px;
+
+            .code-name {
+                font-size: 13px;
+                height: 76px;
+                float: left;
+                width: 35px;
+            }
+
+            .impact-text {
+                color: #999;
+                clear: both;
+            }
+        }
+
+        .block-container {
+            clear: both;
+            height: 270px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                border: 1px solid #666;
+                top: 125px;
+            }
+
+            .block-item {
+                position: absolute;
+                text-align: center;
+
+                .color-block {
+
+                }
+
+                .value {
+                    font-size: 13px;
+                    width: 75px;
+                }
+
+                &.negative {
+                    top: 108px;
+                }
+
+                &.positive {
+                    bottom: 145px;
+                }
+            }
+
+            .block-label {
+                width: 72px;
+                position: absolute;
+                z-index: 10;
+                top: 130px;
+                text-align: center;
+            }
+
+            .color-block-item {
+                &.negative {
+                    top: 146px;
+                }
+
+                &.positive {
+                    bottom: 149px;
+                }
+            }
+
+            &.type-pb {
+                &:after {
+                    top: 160px;
+                }
+
+                .block-item {
+                    width: 90px;
+                }
+
+                .acquiring {
+                    left: 287px;
+                    bottom: 113px;
+
+                    .color-block {
+                        background-color: #f66
+                    }
+                }
+
+                .acquired {
+                    left: 537px;
+                    bottom: 113px;
+                    .color-block {
+                        background-color: #4d7194;
+                    }
+                }
+
+                .current {
+                    bottom: 83px;
+                    left: 420px;
+                }
+            }
+        }
+
+        .legend-container {
+            text-align: right;
+
+            .before {
+                
+            }
+
+            .after {
+                display: none;
+            }
+
+            .legend-item {
+                margin-left: 20px;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+            .ltm {
+                &:before {
+                    background-color: #f66;
+                }
+            }
+
+            .history {
+                &:before {
+                    background-color: #cfe0fc;
+                }
+            }
+
+            .future {
+                &:before {
+                    background-color: #90cdfd;
+                }
+            }
+
+            .after {
+                &:before {
+                    background-color: #5d99e6;
+                }
+            }
+
+            .legend-acquiring {
+                &:before {
+                    background-color: #f66;
+                }
+            }
+
+            .legend-acquired {
+                &:before {
+                    background-color: #4d7194;
+                }
+            }
+        }
+
+        .grade-tip-growth {
+            width: 250px;
+            right: -300px;
+            z-index: 10;
+        }
+
+        .jiaban-container {
+            position: relative;
+            height: 280px;
+            text-align: center;
+
+            .icon-role {
+                font-size: 30px;
+            }
+
+            .jiaban-toggle {
+                width: 100px;
+                position: relative;
+                z-index: 5;
+
+                .current {
+                    color: $st-color-orange;
+                }
+
+                .toggle-container {
+                    background-color: #f2f2f2;
+                    height: 20px;
+                    border-radius: 10px;
+                    border: $st-border;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $st-color-orange;
+                    }
+
+                    &.active {
+                        background-color: $st-color-orange;
+                    }
+                }
+
+                .toggle-bar {
+                    height: 18px;
+                    border: 1px solid $st-color-orange;
+                    border-radius: 9px;
+                    background-color: #fff;
+                    width: 50px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+
+            .icon-div {
+                line-height: 1;
+            }
+
+
+            .jiaban-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .jiaban-text {
+                font-size: 16px;
+                color: #666;
+                border-bottom: 1px solid #666;
+            }
+
+            .jiaban-1 {
+                position: absolute;
+                left: 200px;
+                top: 0;
+            }
+
+            .jiaban-2 {
+                position: absolute;
+                top: 0;
+                left: 429px;
+
+                .iconfont {
+                    color: #cd5454;
+                }
+            }
+
+            .jiaban-3 {
+                position: absolute;
+                top: 0;
+                right: 200px;
+            }
+
+            .jiaban-4 {
+                position: absolute;
+                top: 0;
+                left: 840px;
+
+                .iconfont {
+                    color: #819ae7;
+                }
+
+            }
+
+
+            .jiaban-5 {
+                position: absolute;
+                left: 0;
+                top: 100px;
+                color: #b697b6;
+
+            }
+
+            .jiaban-6 {
+                position: absolute;
+                left: 200px;
+                top: 90px;
+                color: #b697b6;
+
+                .iconfont {
+                    font-size: 56px;
+                }
+            }
+
+            .jiaban-7 {
+                position: absolute;
+                left: 412px;
+                top: 82px;
+                width: 110px;
+                height: 110px;
+                padding: 30px 0;
+                background-color: #da2925;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 16px;
+
+                &.small {
+                    padding: 15px 0;
+                    width: 70px;
+                    height: 70px;
+                    left: 432px;
+                    top: 88px;
+                    font-size: 14px;
+                }
+
+                &.same {
+                    padding: 25px 0;
+                    width: 90px;
+                    height: 90px;
+                    left: 422px;
+                    top: 78px;
+                    font-size: 14px;
+                }
+
+            }
+
+            .jiaban-8 {
+                position: absolute;
+                top: 110px;
+                right: 182px;
+                width: 130px;
+                height: 75px;
+                color: #999;
+
+                .iconfont {
+                    color: #dc233d;
+                }
+
+                .icon-stock {
+                    font-size: 50px;
+                }
+
+                .icon-money1 {
+                    font-size: 50px;
+                }
+
+                .stock-container {
+                    width: 75px;
+                }
+
+                .text-div {
+                    text-align: left;
+                    clear: both;
+                    position: relative;
+                    top: -14px;
+                    width: 95px;
+                }
+
+                .cash-container {
+                    width: 55px;
+                    float: right;
+                    position: relative;
+                    top: -16px;
+                }
+
+                &.no-cash {
+                    .stock-container {
+                        margin: 0 auto;
+                    }
+
+                    .text-div {
+                        text-align: center;
+                        top: 0;
+                        width: auto;
+                    }
+                }
+
+                &.no-stock {
+                    .cash-container {
+                        right: 30px;
+                    }
+                }
+
+            }
+
+            .jiaban-9 {
+                position: absolute;
+                left: 840px;
+                top: 80px;
+                width: 90px;
+                height: 90px;
+                color: #fff;
+
+                .chart {
+                    height: 90px;
+                    width: 90px;
+                }
+
+                .text-container {
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    background: #00279b;
+                    border-radius: 50%;
+                    top: 15px;
+                    left: 15px;
+                    text-align: center;
+                    padding: 10px 0;
+                    font-size: 12px;
+                }
+
+                &.backdoor {
+                    background-color: #00279b;
+                    font-size: 18px;
+                    padding-top: 17px;
+                    border-radius: 50%;
+                }
+            }
+
+            .line-1 {
+                position: absolute;
+                width: 1px;
+                height: 30px;
+                background-color: #b697b6;
+                left: 240px;
+                top: 50px;
+            }
+
+            .line-2 {
+                position: absolute;
+                width: 100px;
+                height: 1px;
+                background-color: #b697b6;
+                top: 135px;
+                left: 60px;
+            }
+
+            .line-3 {
+                position: absolute;
+                width: 100px;
+                height: 1px;
+                background-color: #b697b6;
+                top: 135px;
+                left: 295px;
+            }
+
+            .line-4 {
+                position: absolute;
+                width: 1px;
+                height: 30px;
+                background-color: #dc233d;
+                right: 240px;
+                top: 50px;
+            }
+
+            .line-5 {
+                position: absolute;
+                width: 60px;
+                height: 1px;
+                background-color: #dc233d;
+                top: 135px;
+                right: 100px;
+            }
+
+            .line-6 {
+                position: absolute;
+                width: 70px;
+                height: 1px;
+                background-color: #dc233d;
+                top: 135px;
+                right: 330px;
+
+            }
+
+
+            .jiaban-tip {
+                text-align: left;
+                z-index: 10;
+                width: 190px;
+
+                .extra-text {
+                    color: $st-color-orange;
+
+                    .blank-span {
+                        margin-left: 46px;
+                    }
+                }
+
+                td {
+                    &:last-child {
+                        text-align: right;
+                        padding-right: 5px;
+                    } 
+                }
+
+            }
+
+            .jiaban-tip-1 {
+                display: none;
+                left: 400px;
+                top: 80px;
+            }
+
+            .jiaban-tip-group {
+                display: none;
+
+                .jiaban-tip {
+                    top: 100px;
+                    width: 215px;
+                }
+
+                .jiaban-tip-2-0 {
+                    right: 0;
+                }
+                .jiaban-tip-2-1 {
+                    right: 215px;
+                }
+                .jiaban-tip-2-2 {
+                    right: 430px;
+                }
+                .jiaban-tip-2-3 {
+                    right: 645px;
+                }
+
+                &.member-5 {
+                    .jiaban-tip {
+                        width: 190px;
+                    }
+
+                    .jiaban-tip-2-0 {
+                        right: 0;
+                    }
+                    .jiaban-tip-2-1 {
+                        right: 190px;
+                    }
+                    .jiaban-tip-2-2 {
+                        right: 380px;
+                    }
+                    .jiaban-tip-2-3 {
+                        right: 570px;
+                    }
+                    .jiaban-tip-2-4 {
+                        right: 760px;
+                    }
+                }
+                
+            }
+
+            
+
+            .jiaban-tip-3 {
+                display: none;
+                width: 250px;
+                left: 0;
+                top: 175px;
+            }
+
+            .jiaban-tip-4 {
+                display: none;
+                right: 0;
+                top: 100px;
+            }
+
+            .jiaban-tip-5 {
+                display: none;
+                right: 0;
+                top: 175px;
+            }
+
+            .jiaban-tip-6 {
+                display: none;
+                top: 80px;
+                left: 400px;
+            }
+
+            .jiaban-warning {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            .func1 {
+                font-size: 20px;
+                line-height: 30px;
+                position: absolute;
+                width: 320px;
+                top: 225px;
+                left: -400px;
+                text-align: left;
+
+                .right {
+                    display: none;
+                }
+
+                &:before {
+                    position: absolute;
+                    top: 15px;
+                    left: 136px;
+                    content: '';
+                    height: 1px;
+                    width: 128px;
+                    background-color: #333;
+                }   
+
+                .market-value {
+                    position: absolute;
+                    top: -50px;
+                    left: 136px;
+                    display: none;
+                }         
+
+                .net-income {
+                    position: absolute;
+                    left: 136px;
+                    top: 50px;
+                    display: none;
+                }
+            }
+
+            &.short-type {
+                .jiaban-box {
+                    left: -214px;
+                } 
+
+                .jiaban-8 {
+                    &.no-stock {
+                        right: 193px;
+                    }
+                }
+
+                .jiaban-tip-group {
+
+                    .jiaban-tip-2-0 {
+                        right: -230px;
+                    }
+                    .jiaban-tip-2-1 {
+                        right: -15px;
+                    }
+                    .jiaban-tip-2-2 {
+                        right: 200px;
+                    }
+                    .jiaban-tip-2-3 {
+                        right: 415px;
+                    }
+
+                    &.member-5 {
+                        .jiaban-tip-2-0 {
+                            right: -230px;
+                        }
+                        .jiaban-tip-2-1 {
+                            right: -40px;
+                        }
+                        .jiaban-tip-2-2 {
+                            right: 150px;
+                        }
+                        .jiaban-tip-2-3 {
+                            right: 340px;
+                        }
+                        .jiaban-tip-2-4 {
+                            right: 530px;
+                        }
+                    }
+                    
+                }
+            }
+
+        }
+
+        .func2 {
+            color: #999;
+            position: absolute;
+            left: -550px;
+
+            .blank-span {
+                margin: 0 65px;
+            }
+
+            .text {
+                margin-left: 50px;
+            }
+
+            .number1 {
+                color: $st-color-orange;
+                display: none;
+                position: absolute;
+                left: 44px;
+            }
+
+            .number2 {
+                color: $st-color-orange;
+                display: none;
+                position: absolute;
+                left: 115px;
+            }
+        }
+    }
+}

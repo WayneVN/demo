@@ -1,0 +1,49 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "generators": false,
+      "objectLiteralDuplicateProperties": false
+    },
+    "sourceType": "module",
+    "ecmaVersion": 6,
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    # "amd": true,
+    "es6": true
+  },
+  "rules": {
+    "arrow-body-style": [2, "always"],
+    "no-console": 2,
+    "no-empty": 2,
+
+    "no-multi-str": 2,
+    "no-new-func": 2,
+    "no-script-url": 1,
+    "no-else-return": 1,
+    "no-delete-var": 2,
+    "no-new-require": 2,
+    "no-case-declarations": 1,
+    "no-unneeded-ternary": 1,
+    "no-empty-function": 2,
+    "no-new": 2,
+
+    "strict": [1,"global"],
+    "no-void": 2,
+    "init-declarations": [1, "never", { "ignoreForLoopInit": true }],
+    "jsx-quotes": [2, "prefer-double"],
+    "max-len": [2, { "code": 100, "tabWidth": 4, "ignoreUrls": true } ],
+    "arrow-spacing": [ 2, { "before": true, "after": true } ],
+    "template-curly-spacing": [2, "always"],
+    "no-lonely-if": 2
+
+  }
+}

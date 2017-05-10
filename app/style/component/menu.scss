@@ -1,0 +1,42 @@
+$color-nav-active :#ffae00;
+
+.tally-nav {
+  width: 125px;
+  overflow: hidden;
+  float: left;
+  .nav-menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    $li-height:46px;
+    .activeLink {
+      @include ease(1000);
+      display: inline-block;
+      color: $color-nav-menu;
+    }
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100px;
+      height: $li-height;
+      line-height: $li-height;
+      color: $color-base-font;
+      font-size: 16px;
+      .fa {
+        width: 15px;
+        margin: 0 7px;
+      }
+      a {
+        width: inherit;
+        height: inherit;
+        line-height: inherit;
+        display: inline-block;
+        color:inherit;
+        &:hover {
+          @extend .activeLink;
+        }
+      }
+    }
+  }
+}

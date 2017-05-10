@@ -1,0 +1,42 @@
+.footer {
+    // background: $color-foot-back;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    clear: both;
+    color: $color-foot-font;
+    font-size: 16px;
+    border: none;
+    .foot-nav {
+        margin: 0 auto;
+        margin-top: 17px;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            border-right: 1px solid $color-foot-font;
+            height: 16px;
+            &:last-child {
+                border: none;
+            }
+            a {
+                color: $color-foot-font;
+                padding: 0;
+                line-height: 16px;
+                vertical-align: super;
+            }
+        }
+    }
+    .foot-nav-sm {
+        @extend .foot-nav;
+        margin-top: 10px;
+        a {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        li {
+            height: 12px;
+        }
+    }
+}

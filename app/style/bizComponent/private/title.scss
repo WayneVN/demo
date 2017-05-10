@@ -1,0 +1,70 @@
+.da-dialog {
+    .title-container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .da-dialog-title {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 35px;
+        color: #fff;
+        background-color: $st-color-gray;
+
+        &.stock-color-red {
+            background-color: $st-color-red;
+        }
+
+        &.stock-color-green {
+            background-color: $st-color-green;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+
+        .name {
+            cursor: pointer;
+        }
+
+        .close-icon {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            line-height: 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .number-container {
+            float: right;
+            width: 190px;
+
+            .price {
+                font-size: 20px;
+                margin-right: 5px;
+            }
+        }
+
+        .btn-container {
+            display: inline-block;
+            float: right;
+            width: 91px;
+            height: 36px;
+        }
+
+        .btn {
+            background-color: $st-color-red-dark;
+            font-size: 12px;
+            line-height: 12px;
+            border-radius: 0;
+            margin-top: 6px;
+            margin-left: 10px;
+            float: right;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.msg-dialog {
+    .msg-component-grade {
+        background-color: #f2f2f2;
+        position: relative;
+        z-index: 2;
+
+        height: 72px;
+        border: $st-border; 
+        
+        .star {
+            color: $st-color-orange;
+        }
+
+        .zero-star {
+            font-size: 12px;
+            line-height: 12px;
+            color: #999;
+        }
+
+        .star-0 {
+            line-height: 12px;
+        }
+        
+        p {
+            margin: 0;
+        }
+        .score-container {
+            float: left;
+            width: 120px;
+            border-right: 1px solid #000;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .rule-container {
+            float: left;
+            width: 120px;
+            color: #999;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .level-block {
+            float: left;
+            margin: 5px 10px 5px 0;
+        }
+
+        .no-grade {
+            line-height: 40px;
+            height: 40px;
+            margin-top: 15px;
+            font-size: 18px;
+            float: left;
+            color: #666;
+        }
+
+        .block-text {
+            margin-left: 20px;
+        }
+    }
+}

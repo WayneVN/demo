@@ -1,0 +1,21 @@
+.doumi-dialog {
+    .img-container {
+        width: 220px;
+        float: left;
+        text-align: center;
+
+        .big-img {
+            img {
+                width: 108px;
+            }
+        }
+
+        .small-img {
+            position: relative;
+            top: -16px;
+            img {
+                width: 32px;
+            }
+        }
+    }
+}

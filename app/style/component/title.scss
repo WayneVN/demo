@@ -1,0 +1,18 @@
+.web-title {
+  border-left: 4px solid $st-color-red;
+  border-bottom: 1px solid $st-color-gray;
+  display: inline-block;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 20px;
+  color: $color-title;
+  .title {
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  .subTitle {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+}

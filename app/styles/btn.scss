@@ -1,0 +1,404 @@
+.btn {
+    border-radius: 2px;
+    &:focus {
+        outline: none;
+        color: inherit;
+    }
+}
+
+.btn-org {
+    @extend .btn;
+    border: 1px solid $color-org;
+    padding: 7px 14px;
+    color: $color-org;
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-red {
+    @extend .btn;
+    border: 1px solid $color-org;
+    color: $color-org;
+}
+
+.btn-green {
+    @extend .btn;
+    border: 1px solid $color-green;
+    color: $color-green;
+    &:hover,
+    :active,
+    :focus {
+        border: 1px solid $color-green;
+        color: $color-green;
+    }
+}
+
+.btn-white {
+    background-color: white;
+    border: 1px solid $color-border-grey;
+}
+
+.btn-red-a {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: $color-red;
+    padding: 7px 14px;
+    color: $white;
+    &:hover {
+        color: $white;
+        border: 1px solid $st-color-red-light;
+    }
+}
+
+.btn-orange {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: $color-org;
+    padding: 7px 14px;
+    color: $white;
+    &:hover {
+        color: $white;
+        background-color: $color-btn-org-active;
+    }
+    &:active {
+        color: $white;
+        background-color: $color-btn-org-hover;
+    }
+}
+
+.btn-disabled {
+    @extend .btn;
+    cursor: default !important;
+}
+
+.btn-active {
+    @extend .btn-red;
+    &:hover,
+    :active,
+    :focus {
+        @extend .btn-red;
+    }
+}
+
+.btn-default {
+    border-radius: 0;
+    margin: 0 10px 10px 0;
+}
+
+.btn-full-org {
+    width: 210px;
+    height: 30px;
+    line-height: 30px;
+    color: $color-white;
+    background-color: $color-org;
+    box-shadow: none;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0;
+    outline: none;
+    &:hover,
+    :active,
+    :focus {
+        border: none;
+        color: $color-white;
+        background-color: $color-org;
+    }
+}
+
+.btn-full {
+    @extend .btn-full-org;
+    border-radius: 20px;
+    margin: 0 auto;
+    &:hover {
+        background-color: $color-red;
+    }
+}
+
+.btn-sm-green {
+    @extend .btn-full-org;
+    width: 85px;
+    float: left;
+    background-color: $color-input-bg;
+    border: 1px solid #e5e4e3;
+    border-left: none;
+    color: $color-org;
+    font-size: $base-font-size;
+    margin: 0;
+    &:hover {
+        border: none;
+    }
+}
+
+// .btn-active {
+//   display: inline-block;
+// }
+.btn-full {
+    display: none;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.forms-lg {
+    .form-title {
+        text-align: center;
+    }
+    .form-hr-lg {
+        margin-left: 50px;
+    }
+    .btn-none-border {
+        @extend .btn;
+        border: none;
+        color: $color-nav-menu;
+        float: right;
+        &:hover {
+            border: none;
+            color: $color-nav-menu;
+            float: right;
+        }
+    }
+}
+
+.btn-showdown {
+    background-color: $color-nav-menu;
+    color: $color-white;
+    font-size: 14px;
+    padding: 0;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 1px 1px 1px 1px $color-modal-border;
+    cursor: pointer;
+}
+
+.btn-showdown-md {
+    @extend .btn-showdown;
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    float: left;
+}
+
+.tally-btn {
+    background: #fff;
+    border: 1px solid #cfd5e1;
+    border-radius: 3px;
+    color: $color-tally-btn;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    .fa {
+        margin-right: 3px;
+    }
+}
+
+.btn-step-next {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: $color-org;
+    padding: 7px 14px;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-step-disabled {
+    background-color: $color-disabled;
+    cursor: not-allowed;
+    &:hover {
+        color: inherit;
+        border-color: inherit;
+    }
+}
+
+
+@mixin case-arrow($border-color, $arrow-color) {
+  margin-bottom: 5px;
+  display: inline-block;
+  position: relative;
+  $arrow-base-size: 12px;
+  line-height: $arrow-base-size * 2 - 2;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-left: none;
+  margin-left: 20px;
+  padding: 0px 5px;
+  .fa-times {
+    display: none;
+    cursor: pointer;
+  }
+  &:hover .fa-times {
+    margin-left: 5px;
+    display: inline-block;
+  }
+  &:before,
+  &:after {
+    border: $arrow-base-size solid;
+    border-color: transparent $border-color transparent transparent;
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -$arrow-base-size * 2;
+    top: -1px;
+  }
+  &:after {
+    border: $arrow-base-size - 0.5 solid;
+    border-color: transparent $arrow-color transparent transparent;
+    top: 0;
+    left: -$arrow-base-size * 2 + 2;
+  }
+}
+
+
+//橘色箭头
+.btn-arrow {
+  @include case-arrow($color-orange, #fff);
+}
+
+.red-arrow {
+  color: #FFFFFF;
+  @include case-arrow(#FFFFFF, $st-color-red);
+}
+
+.green-arrow {
+  color: #FFFFFF;
+  @include case-arrow(#FFFFFF,$color-tip-green);
+}
+
+.flat-arrow {
+  color: #FFFFFF;
+  @include case-arrow(#FFFFFF,$color-bg-gray);
+}
+
+
+
+@mixin case-user-arrow($arrow-color,$color) {
+  display: inline-flex;
+  border: 1px solid;
+  border-color: $arrow-color;
+  margin-right: 20px;
+  line-height: 21px;
+  padding: 0 5px;
+  border-radius: 0px;
+  color: $color;
+  margin-bottom: 5px;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  span {
+    display: inline-flex;
+    color: $color !important;
+  }
+
+  .arrow-del {
+    margin: 0px 5px;
+    color: #efefef;
+  }
+
+  &:hover {
+    .arrow-del {
+      display: block;
+      color: $color;
+    }
+  }
+}
+
+.user-arrow {
+  @include case-user-arrow(#FFFFFF, #FFFFFF);
+  font-size: 14px;
+}
+
+.blue-user-arrow {
+  @include case-user-arrow($color-blue, $color-blue);
+}
+
+.orange-user-arrow {
+    @include case-user-arrow($color-orange,$color-orange);
+    .fa-remove {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 18px;
+        transition: 0.25s ease;
+        color: #f1f1f1;
+    }
+    &:hover {
+        .fa-remove {
+            color: inherit;
+        }
+    }
+}
+
+/* 开关按钮 - 样式参照-> 首页->  添加提醒
+ * demo: span.btn-switch => 关闭, span.btn-switch.btn-switch-checked =>开启
+ */
+.btn-switch {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 44px;
+    height: 22px;
+    line-height: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 1px solid #999;
+    background-color: #999;
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:focus{
+        box-shadow: 0 0 0 2px rgba(45,183,245,.2);
+        outline: 0;
+    }
+    .btn-switch-inner {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: 0px;
+        left: 0px;
+    }
+}
+.btn-switch-checked {
+    border-color: #f6ac31;
+    background-color: #f6ac31;
+    .btn-switch-inner {
+        right: 0px !important;
+    }
+}

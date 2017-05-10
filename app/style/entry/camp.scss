@@ -1,0 +1,52 @@
+@import '../common';
+@import '../component/menu';
+@import '../old/alert';
+@import '../component/button';
+@import '../component/upload';
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.camp-container {
+    margin: 25px auto;
+    min-height: 850px;
+    .nav-menu {
+        li {
+            cursor: pointer;
+        }
+        .selected {
+            color: $st-color-orange;
+        }
+    }
+    .tally-right-container {
+        width: 835px;
+        /* overflow: hidden; */
+        float: right;
+        min-height: 1000px;
+        .tally-content {
+            width: 100%;
+        }
+        .mod-head-error {
+            font-size: 14px;
+            color: $color-tally-btn;
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+            .error_light {
+                color: $color-account-red;
+            }
+        }
+        .table {
+            border: none;
+        }
+    }
+    .spring-userinfo {
+        display: inline-block;
+        .s-line-group {
+            display: inline-block;
+            padding: 5px 10px;
+            width: 270px;
+        }
+    }
+}

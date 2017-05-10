@@ -1,0 +1,419 @@
+
+.container {
+  position: relative;
+  margin: 25px auto;
+  width: 960px;
+  min-height: 850px;
+  /* overflow: hidden; */
+  height: 100%;
+  background-color: $color-white;
+  border: 1px solid $color-border-grey;
+  padding: 0;
+}
+.container-hide {
+  position: relative;
+  z-index: -1;
+}
+.panel-tab {
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  .tab-list {
+    display: inline-block;
+    float: left;
+    .tab-item {
+      display: inline-block;
+      line-height: 50px;
+      // width: 80px;
+      margin-right: 5px;
+      text-align: center;
+      cursor: pointer;
+      .tab-name {
+        @include ease(0.3s);
+        font-size: $base-font-size;
+        color:$color-tab-font;
+        &:hover {
+          color:$color-org;
+        }
+      }
+    }
+  }
+  .active {
+    .tab-name {
+      color:$color-org !important;
+    }
+  }
+}
+
+.panel {
+  border-top: 1px solid $color-border-grey;
+  .panel-head {
+    height: 40px;
+    background-color: $color-body-grey;
+    padding: 0 15px;
+    p {
+      line-height: 40px;
+      display: inline-block;
+      float: left;
+      margin: 0;
+      font-size: $base-font-size;
+      color:$color-font-grey;
+    }
+    .link-res {
+      float: right;
+      font-size: $base-font-size;
+      line-height: 40px;
+      color:$color-base-font;
+    }
+  }
+  .panel-body {
+    padding: 20px 40px;
+    // padding-bottom: 0;
+    // overflow: hidden;
+    width: 100%;
+    position: relative;
+    & :hover {
+      .btn-full{
+        display: inline-block;
+      }
+    }
+    .panel-telescopic-close , .panel-telescopic-open {
+      display: none;
+      margin-right: 15px;
+      cursor: pointer;
+      @include ease(0.3s);
+      height: 30px;
+      line-height: 30;
+      color:$color-org;
+      font-size: $base-font-size;
+      position: absolute;
+      top: -185px;
+      right: 0;
+    }
+    .link-active {
+      display: block;
+    }
+  }
+}
+.panel-content {
+  @extend .panel;
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  .panel-head {
+    height: 49px;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-border-grey;
+    margin: 0 20px;
+    padding: 0;
+    h2 {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 49px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+    .back {
+      font-size: 18px;
+      text-align: right;
+      float: right;
+      line-height: 50px;
+      cursor: pointer;
+    }
+    .icon-group {
+      float: right;
+      color: $color-yellow;
+      line-height: 50px;
+      small {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.panel-sm {
+  @extend .panel;
+  .panel-body {
+    padding: 10px 20px;
+    .panel-row {
+      margin-bottom: 20px;
+      .row-por {
+        width: 100%;
+        position: relative;
+        bottom: -30px;
+      }
+      .row-panel {
+        overflow: hidden;
+      }
+      .row-title {
+        color: $color-grey;
+        font-size: 12px;
+        display: block;
+        clear: both;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .btn {
+        margin: 5px;
+      }
+    }
+  }
+}
+.panel-left {
+  width: 180px;
+  // border-right: 1px solid $color-border-grey;
+  float: left;
+}
+.panel-right {
+  width: 777px;
+  /* width: 960px; */
+  /* float: left; */
+  display: block;
+  margin: 0 auto;
+  /* border-left:1px solid $color-border-grey; */
+  overflow: hidden;
+}
+.panel-list-sm {
+  font-size: $base-font-size;
+  color: $color-base-font;
+  td {
+    border:none;
+    padding: 0;
+    line-height: 30px;
+    text-align: right;
+    width: 94px;
+  }
+  .list-item-name {
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    a {
+      color:inherit;
+    }
+  }
+}
+.panel-chart {
+  @extend .panel;
+  border: 1px solid $color-border-grey;
+  margin: 30px 0;
+  .panel-head {
+    height: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: relative;
+    p {
+      width: 100px;
+      margin-top: -10px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color:$color-base-font;
+      background-color: $color-white;
+      display: inline-block;
+      margin-left: (696px - 100px) / 2;
+      position: relative;
+      .crile {
+        position: absolute;
+        top: 7px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $color-border-grey;
+        display: inline-block;
+      }
+      .crile-l {
+        @extend .crile;
+        left: 0;
+      }
+      .crile-r {
+        @extend .crile;
+        right: 0;
+      }
+    }
+  }
+  .panel-body {
+    padding: 10px;
+    overflow: visible;
+    display: inline-block;
+  }
+}
+
+.panel-chart-none {
+    @extend .panel;
+    border: none;
+    height: 205px;
+    .panel-body {
+      padding: 1px;
+    }
+}
+
+.panel-left-bar {
+  width: 180px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 0;
+  .panel-head {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    border: none;
+    height: 100%;
+    h1 {
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      word-break:break-all;
+      span {
+        display: block;
+      }
+    }
+  }
+  .panel-body {
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+  }
+}
+.panel-right-bar {
+  width: 570px;
+  height: 100%;
+  float: left;
+}
+.panel-chat {
+  @extend .panel;
+  & :hover {
+    .btn-full{
+      display: inline-block !important;
+    }
+  }
+  background-color: #fbfdff;
+  margin: 20px auto;
+  clear: both;
+  width: 570px;
+  height: 100%;
+  border: 1px solid $color-border-grey;
+  .panel-head{
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color: inherit;
+    .panel-l-name {
+      float: left;
+      font-size: $base-font-size;
+      font-weight: bold;
+      padding-right: 10px;
+      color:$color-black;
+    }
+    .panel-l-title{
+      float: left;
+      float: left;
+      font-size: 12px;
+      color:$color-base-font;
+    }
+    .panel-r-contrast {
+      float: right;
+      color: $color-org;
+      font-size: 12px;
+      display: inline-block;
+      line-height: 40px;
+      position: absolute;
+      right: 120px;
+      z-index: 1;
+    }
+  }
+  .panel-body{
+    clear: both;
+    padding: 10px;
+  }
+}
+
+.panel-chat-lg{
+  width: 840px;
+}
+
+.panel-chat-contrast {
+  @extend .panel-chat;
+
+}
+.base-info {
+  width: 105px;
+  height: 70px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  font-size: $base-font-size;
+  color:$color-base-font;
+  margin-right: 20px;
+  p {
+    text-align: center;
+    line-height: 22px;
+    margin: 5px;
+  }
+  .base-info-hr {
+    height: 6px;
+    border-radius: 10px;
+    background-color: #d0d3d9;
+    width: 100%;
+  }
+}
+.base-info-first {
+  margin-left: 70px;
+}
+.base-info-defalut{
+  @extend .base-info;
+}
+.base-info-blue{
+  @extend .base-info;
+  .base-info-hr {
+    background: $color-blue;
+  }
+}
+.base-info-org{
+  @extend .base-info;
+  .base-info-hr {
+    background: $color-org;
+  }
+}
+
+.chart-title {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: $base-font-size;
+  padding: 0;
+  margin-left: 212px;
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 5px;
+    float: left;
+    line-height: 19px;
+    margin-top: 4px;
+    margin-right: 7px;
+  }
+  .blue {
+    background-color: $color-head-blue;
+  }
+  .org  {
+    background-color: $color-org;
+  }
+  p {
+    display: inline-block;
+    float: left;
+    margin: 0;
+  }
+  li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+  }
+}

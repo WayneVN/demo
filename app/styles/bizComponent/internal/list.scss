@@ -1,0 +1,215 @@
+.internal-dialog {
+
+    .internal-dialog-list {
+        border: $st-border;
+        position: relative;
+
+        .pdf-icon {
+            width: 25px;
+            position: relative;
+            top: 5px;
+            margin-left: 10px;
+
+            &.hide-icon {
+                visibility: hidden;
+            }
+        }
+
+        .list-table {
+            width: 100%;
+            .table-head {
+                background-color: #f0f0f0;
+                border-bottom: $st-border;
+            }
+
+            .strong-line {
+                font-weight: bold;
+            }
+
+            .special-span {
+                background-color: #666;
+                color: #fff;
+
+                .color-text {
+                    color: #fff;
+                }
+            }
+
+            .qa-mark {
+                margin-left: 5px;
+            }
+
+            tbody {
+                tr:nth-child(even) {
+                    background-color: #f7f7f7;
+                }
+            }
+
+            td {
+                border: none;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .special-td {
+                padding-right: 45px;
+            }
+
+            .circle-item {
+                width: 35px;
+                background-color: #fff;
+                line-height: 0;
+            }
+
+            .status-item {
+                background-color: #fff;
+                width: 50px;
+            }
+
+            .date-item {
+                width: 191px;
+            }
+
+            .cost-item {
+                width: 50px;
+            }
+
+            .progress-item {
+                width: 230px;
+                padding: 0 10px;
+                text-align: left;
+            }
+
+            .announcment-item {
+                width: 138px;
+            }
+
+            .red-status {
+                padding: 0 3px;
+                color: $st-color-red;
+                border: 1px solid $st-color-red;
+            }
+
+            .progress-container {
+                color: $st-color-orange;
+            }
+
+            .list-progress-bar {
+                display: inline-block;
+                background-color: $st-color-orange;
+                height: 15px;
+                margin-right: 10px;
+                position: relative;
+                top: 2px;
+            }
+
+            .no-data-progress {
+                padding-left: 45px;
+            }
+
+            .list-circle {
+                display: inline-block;
+                height: 50px;
+                width: 2px;
+                background-color: #efefef;
+                position: relative;
+
+
+                .big-circle {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    position: relative;
+                    left: -9px;
+                    top: 15px;
+                    padding-top: 4px;
+                }
+
+                .small-circle {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #efefef;
+                    position: relative;
+                }
+
+                &.only-one {
+                    background-color: #fff;
+                }
+
+                &.first-one {
+                    height: 25px;
+                    margin-top: 25px;
+
+                    .big-circle {
+                        top: -10px;
+                    }
+                }
+
+                &.circle-evolve {
+                    &.last-one {
+                        height: 25px;
+                        top: -12px;
+
+                        &.only-one {
+                            top: 0;
+                        }
+                    }
+                }
+                
+                &.circle-end {
+                    height: 25px;
+                    margin-top: 25px;
+
+                    .big-circle {
+                        top: -10px;
+                        border: 1px solid #efefef;
+                        background-color: #fff;
+                    }
+
+                }
+
+                &.circle-start {
+                    height: 25px;
+                    margin-bottom: 25px;
+
+                    .big-circle {
+                        border: 1px solid #efefef;
+                        background-color: #fff;
+                    }
+
+                }
+
+                &.current {
+                    .big-circle {
+                        border: 1px solid $st-color-orange;
+                        background-color: #fff;
+
+                    }
+
+                    .small-circle {
+                        background-color: $st-color-orange;
+                    }
+                }
+
+            }
+
+        }
+
+        .tip-container {
+            margin-top: 10px;
+        }
+
+        .grade-tip-money,
+        .grade-tip-ratio,
+        .grade-tip-cost 
+        {
+            top: 65px;
+            width: 170px;
+            right: -200px;
+        }
+
+    }
+}

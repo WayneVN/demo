@@ -1,0 +1,59 @@
+.upload-drop-warp {
+  cursor: pointer;
+  min-height: 36px;
+  max-height: 130px;
+  /* width: 918px; */
+  text-align: center;
+  color: $color-orange;
+  border: 1px solid;
+  padding: 15px 14px;
+  display: flex;
+  overflow-y: auto;
+  .upload-add {
+      $size: 50px;
+      display: block;
+      width: $size;
+      height: $size;
+      background: #fee6bd;
+      color: #fff;
+      float: left;
+      .fa-plus {
+          line-height: $size;
+          font-size: $size/2;
+          vertical-align: super;
+      }
+  }
+  .upload-files {
+    padding: 13px 6px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color: #7bc07f;
+    width: 300px;
+    .fa-file-excel-o , .fa-file-pdf-o {
+      font-size: 36px;
+      display: inline-block;
+      margin-top: -7px;
+    }
+    .fa-times-circle {
+      display: inline-block;
+      position: absolute;
+      z-index: 10;
+      font-size: 18px;
+      top: 2px;
+      right: 2px;
+    }
+    .upload-name {
+      display: inline-block;
+      margin: 0;
+    }
+    &:hover {
+      @include ease(500);
+      background-color: $color-grey;
+      .fa-times-circle  {
+        display: block;
+        color: $color-black;
+      }
+    }
+  }
+}

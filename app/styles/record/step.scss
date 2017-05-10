@@ -1,0 +1,52 @@
+.step-warp {
+  width: 100%;
+  color:$color-org;
+  overflow: hidden;
+  position: relative;
+  .step-title , .step-number {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    li {
+      width: 100px;
+      text-align: inherit;
+      list-style: none;
+      font-size: 16px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+  .step-number {
+    li {
+      display: inline-block;
+      .step-round {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        color:$color-white;
+        font-size: 12px;
+        $round-size:18px;
+        width: $round-size;
+        height: $round-size;
+        line-height: $round-size;
+        border-radius: 50%;
+        background-color: $color-btn-grey;
+        font-weight: normal;
+        .step-hr {
+          position: absolute;
+          width: 75px;
+          height: 1px;
+          border:none;
+          background-color: inherit;
+          left: 30px;
+          top: 9px;
+        }
+      }
+      .active {
+        @include ease(1000);
+        background-color: $color-org;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+@import './basicInfo';
+@import './k';
+@import './rank';
+@import './tip';
+
+.stock-dialog {
+    width: 900px;
+
+    .modal-content {
+        border-radius: 0;
+    }
+
+    .chart-container {
+        border: 1px solid $st-color-gray;
+        border-top: none;
+        position: relative;
+        background-color: #f2f2f2;
+    }
+
+    .error-container {
+        .close-icon {
+            float: right;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .message {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    }
+}

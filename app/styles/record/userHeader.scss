@@ -1,0 +1,270 @@
+$color-btn: #2e539a;
+$progress-color: #15325b;
+$color-li-font:#6e8ebf;
+$panel-user-width:840px;
+$color-primay: #ffae00;
+
+.user-header {
+  width: 100%;
+  padding: 0;
+  overflow: visible;
+  border-bottom: 1px solid #ecf1f8;
+  margin-bottom: 10px;
+  .user-panel-tab {
+    display: inline-block;
+    width: 116px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+    margin-right: 10px;
+
+
+    .my-account {
+      .btn {
+        width: 116px;
+        background-color: $color-primay;
+        border: none;
+        font-size: 16px;
+        border-radius: 0;
+        color: #fff;
+        padding: 10px 0;
+        margin: 0;
+      }
+
+      .dropdown-menu {
+        max-height: 200px;
+        overflow-y: auto;
+        min-width: 116px;
+        border-color: $color-primay;
+
+        li {
+          width: 110px;
+          @extend .text-overflow;
+
+          a {
+            outline: 0;
+          }
+        }
+      }
+    }
+
+    .my-virtual {
+      font-size: 16px;
+      color: #777;
+      padding: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: $color-primay;
+      }
+    }
+
+    .change-btn {
+      span {
+        position: relative;
+        border: 1px solid #d2d2d2;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+        &:hover {
+          border-color: $color-primay;
+
+          &:before,
+          &:after
+          {
+            border-color: $color-primay;
+          }
+        }
+      }
+
+      .plus {
+        margin-right: 10px;
+
+        &:before {
+          position: absolute;
+          width: 1px;
+          border-right: 1px solid #d2d2d2;
+          height: 20px;
+          top: 4px;
+          left: 13px;
+          content: '';
+        }
+
+        &:after {
+          position: absolute;
+          width: 20px;
+          border-bottom: 1px solid #d2d2d2;
+          height: 1px;
+          top: 13px;
+          left: 4px;
+          content: '';
+        }
+      }
+
+      .minus {
+        &:after {
+          position: absolute;
+          width: 20px;
+          border-bottom: 1px solid #d2d2d2;
+          height: 1px;
+          top: 13px;
+          left: 4px;
+          content: '';
+        }
+      }
+
+
+
+    }
+
+  }
+  .user-panel {
+    width: 830px;
+
+    float: left;
+    color: #777;
+
+    .user-base-info,
+    .user-update-info,
+    .user-action-area {
+      display: inline-block;
+    }
+
+    p {
+      margin: 0 0 5px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .user-base-info {
+      width: 200px;
+      margin-left: 10px;
+
+      span {
+        vertical-align: middle;
+      }
+
+      .text-item {
+        margin-left: 10px;
+        @extend .text-overflow;
+
+        display: inline-block;
+        max-width: 100px;
+      }
+    }
+
+    .user-update-info {
+      width: 470px;
+      margin-right: 30px;
+      height: 64px;
+      margin-top: 5px;
+      vertical-align: top;
+
+      .delta-day {
+        font-size: 14px;
+        color: $color-primay;
+        .number {
+          color: #777;
+        }
+      }
+
+      .day-progress-container {
+        border-left: 1px solid #999;
+        font-size: 14px;
+
+        .special-text {
+          color: $color-primay;
+        }
+
+        .day-text {
+          margin: 0 10px;
+          line-height: 20px;
+        }
+
+        .last-day-text {
+          float: right;
+        }
+      }
+    }
+
+    .user-action-area {
+      width: 120px;
+    }
+  }
+
+
+  .no-account {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 30px;
+
+    .click-text {
+      color: $color-primay;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.tracking-user-update-info {
+    width: 290px;
+    margin-right: 30px;
+    height: 55px;
+    margin-top: 8px;
+    vertical-align: top;
+
+    .delta-day {
+        font-size: 14px;
+        color: $color-primay;
+        .number {
+            color: #777;
+        }
+    }
+
+    .day-progress-container {
+        font-size: 14px;
+        background-color: #c7c7c7;
+        border-radius: 10px;
+        $h: 8px;
+        .day-progress {
+            height: $h;
+            .day-bar {
+                height: $h;
+                background-color: $progress-color;
+                border-right: 3px solid #333;
+                border-radius: 10px;
+                float: left;
+            }
+            .iconfont {
+                float: right;
+                font-size: 20px;
+                margin-top: -15px;
+                margin-right: -12px;
+                color: $progress-color;
+            }
+        }
+
+        .special-text {
+            color: $color-primay;
+        }
+
+        .day-text {
+            margin: 0 10px;
+            line-height: 20px;
+        }
+
+        .last-day-text {
+            float: right;
+        }
+    }
+    .tracking-time-right {
+        color: #c9c9c9;
+        float: right;
+        font-size: 12px;
+        margin-right: -33px;
+    }
+}

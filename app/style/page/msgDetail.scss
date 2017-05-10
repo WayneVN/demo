@@ -1,0 +1,152 @@
+
+.msg-dialog {
+    width: 960px;
+    font-size: 14px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+
+    .color-text {
+        color: $st-color-orange;
+    }
+
+    .msg-tag {
+        height: 20px;
+        line-height: 18px;
+        border: $st-border;
+        padding: 0 13px;
+        border-radius: 8px 0;
+        background-color: #fff;
+    }
+
+
+    .right {
+        float: right;
+    }
+
+    .fix-container {
+        position: fixed;
+        top: 0;
+        padding-top: 70px;
+        background-color: #fff;
+        width: 960px;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .qa-mark {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $st-color-orange;
+        border-radius: 50%;
+        line-height: 14px;
+        text-align: center;
+        background-color: #fff;
+        color: $st-color-orange;
+        font-size: 13px;
+    }
+
+    .modal-content {
+        border-radius: 0;
+    }
+
+    table {
+        width: 100%;
+        margin: 0;
+
+        td {
+            padding: 0;
+            line-height: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+
+    .content {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding: 25px 0;
+        clear: both;
+        width: 960px;
+        margin-top: 219px;
+        position: relative;
+        z-index: 1;
+
+        .content-box {
+            margin-bottom: 20px;
+            position: relative;
+            border: $st-border;
+            padding: 20px 15px;
+
+            .name {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                top: -14px;
+                left: 0;
+
+                span {
+                    padding: 0 30px;
+                    font-size: 20px;
+                    background-color: #fff;
+                }
+            }
+            
+        }
+
+        .description {
+            text-indent: 28px;
+            font-size: 13px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .grade-tip {
+        position: absolute;
+        background: #fff;
+        padding: 5px;
+        border: 1px solid $st-color-orange;
+        z-index: 10;
+
+        .color-line {
+            color: #fff;
+            background-color: #666;
+            line-height: 22px;
+            padding-left: 5px;
+        }
+
+        &.grade-tip-0 {
+            .tip-0 {
+                background-color: $st-color-orange;
+                color: #fff;
+            }
+        }        
+
+        &.grade-tip-1 {
+            .tip-1 {
+                background-color: $st-color-orange;
+                color: #fff;
+            }
+        }        
+
+        &.grade-tip-2 {
+            .tip-2 {
+                background-color: $st-color-orange;
+                color: #fff;
+            }
+        }        
+
+        &.grade-tip-3 {
+            .tip-3 {
+                background-color: $st-color-orange;
+                color: #fff;
+            }
+        }
+    }
+
+}

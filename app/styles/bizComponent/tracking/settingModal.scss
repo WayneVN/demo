@@ -1,0 +1,42 @@
+.report-setting-modal {
+    width: 470px;
+    border-radius: 3px;
+    top: 170px;
+
+    .modal-head {
+        color: #333;
+        position: relative;
+
+        .m-head-logo {
+            margin-top: 15px;
+            margin-left: 15px;
+            display: inline-block;
+        }
+        h2 {
+            margin: 0px;
+            padding: 0px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+        .fa-remove {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+
+    .modal-foot {
+        height: 50px;
+        line-height: 50px;
+
+        .jd-btn {
+            float: right;
+            margin: 10px 10px 10px 0;
+        }
+    }
+}

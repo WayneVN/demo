@@ -1,0 +1,59 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Quick floats
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// Visibility
+.invisible {
+  visibility: hidden;
+}
+
+// For Affix plugin
+.affix {
+  position: fixed;
+}
+
+
+//
+// Component animations
+// --------------------------------------------------
+
+
+
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  .transition(height .35s ease);
+  &.in {
+    height: auto;
+  }
+}
+.clearfix {
+    *zoom: 1;             /* for IE 6/7 */
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;     /* for Opera */
+    }
+    &:after {
+        clear: both;
+    }
+}

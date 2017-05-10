@@ -1,0 +1,23 @@
+.tally-right-container {
+  width: 835px;
+  /* overflow: hidden; */
+  float: right;
+  min-height: 1000px;
+  .tally-content {
+    width: 100%;
+  }
+  .mod-head-error {
+      font-size: 14px;
+      color:$color-tally-btn;
+      text-align: left;
+      display: inline-block;
+      margin: 0;
+      .error_light {
+          color:$color-account-red;
+      }
+  }
+
+  .table {
+    border: none;
+  }
+}

@@ -1,0 +1,71 @@
+$loader-color: #ffbf36 !default;
+$ball-size: 15px !default;
+$margin: 2px !default;
+$line-height: 35px !default;
+$line-width: 4px !default;
+
+@mixin global-bg() {
+  background-color: $loader-color;
+}
+
+@mixin global-animation() {
+  animation-fill-mode: both;
+}
+
+@mixin balls() {
+  @include global-bg();
+
+  width: $ball-size;
+  height: $ball-size;
+  border-radius: 100%;
+  margin: $margin;
+}
+
+@mixin lines() {
+  @include global-bg();
+
+  width: $line-width;
+  height: $line-height;
+  border-radius: 2px;
+  margin: $margin;
+}
+@function delay($interval, $count, $index) {
+  @return ($index * $interval) - ($interval * $count);
+}
+
+
+@keyframes line-scale-pulse-out {
+  0% {
+    transform: scaley(1.0);
+  }
+  50% {
+    transform: scaley(0.4);
+  }
+  100% {
+    transform: scaley(1.0);
+  }
+}
+
+.line-scale-pulse-out {
+
+  > div {
+    @include lines();
+    @include global-animation();
+
+    display: inline-block;
+    animation: line-scale-pulse-out 0.9s delay(0.2s, 3, 0) infinite cubic-bezier(.85,.25,.37,.85);
+
+    &:nth-child(2), &:nth-child(4) {
+      animation-delay: delay(0.2s, 3, 1) !important;
+    }
+
+    &:nth-child(1), &:nth-child(5) {
+      animation-delay: delay(0.2s, 3, 2) !important;
+    }
+
+  }
+}
+.loader-center {
+    text-align: center;
+    margin-top: 25%;
+}

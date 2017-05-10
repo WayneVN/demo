@@ -1,0 +1,202 @@
+.panel-step-bg {
+  .modal-content {
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    background-color: $color-step-panel;
+  }
+}
+
+.dialog {
+  .custom-dialog-lg {
+    width: 710px;
+  }
+  .dialog-container {
+    position: relative;
+  }
+  .dialog-container .dialog, .dialog-container .dialog-backdrop {
+    position: absolute;
+  }
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .img-rounded {
+    border-radius: 6px;
+  }
+  .img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  .img-circle {
+    border-radius: 50%;
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .sr-only-focusable:active,
+  .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+  [role="button"] {
+    cursor: pointer;
+  }
+  .dialog-open {
+    overflow: hidden;
+  }
+  .dialog {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+  }
+  .dialog.fade .dialog-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+  .dialog.in .dialog-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .dialog-open .dialog {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .dialog-dialog {
+    position: relative;
+    width: auto;
+    max-width: 710px;
+    margin: 10px auto;
+  }
+  .dialog-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0;
+  }
+  .dialog-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000000;
+  }
+  .dialog-backdrop.fade {
+    opacity: 0;
+    filter:alpha(opacity=0);
+  }
+  .dialog-backdrop.in {
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+  }
+  .dialog-header {
+    padding: 20px;
+    border-bottom: 1px solid #e0e4e5;
+    min-height: 16.42857143px;
+  }
+  .dialog-header .close {
+    margin-top: -2px;
+  }
+  .dialog-title {
+    margin: 0;
+    line-height: 1.42857143;
+    span{
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: $size-dialog-title;
+      color:$color-dialog-title;
+    }
+  }
+  .dialog-body {
+    position: relative;
+    padding: 0 15px;
+  }
+  .dialog-footer {
+    padding: 15px;
+    text-align: right;
+  }
+  .dialog-footer .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+  .dialog-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+  }
+  .dialog-footer .btn-block + .btn-block {
+    margin-left: 0;
+  }
+  .dialog-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+  }
+  .clearfix:before,
+  .clearfix:after,
+  .dialog-footer:before,
+  .dialog-footer:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after,
+  .dialog-footer:after {
+    clear: both;
+  }
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

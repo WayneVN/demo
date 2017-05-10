@@ -1,0 +1,15 @@
+.page {
+  width: 960px;
+  margin: 0 auto;
+
+  .page-left {
+    float: left;
+    width: 710px;
+    margin-right: 20px;
+  }
+
+  .page-right {
+    float: left;
+    width: 230px;
+  }
+}

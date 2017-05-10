@@ -1,0 +1,38 @@
+.doumi-dialog {
+
+    .guess{
+
+        .content-container {
+            .content {
+                padding: 20px;
+
+                .black-btn {
+                    float: right;
+                    background-color: #666;
+                }
+            }
+
+            .footer-container {
+                .other {
+                    text-decoration: underline;
+                    font-size: 14px;
+                    color: #ff5959;
+                    cursor: pointer;
+                }
+
+                .right {
+                    font-size: 14px;
+                    border: $st-border;
+                    padding: 5px;
+                    cursor: pointer;
+                    line-height: 14px;
+                    margin-top: 10px;
+                    color: #666;
+                }
+
+            }
+
+        }
+    }
+
+}

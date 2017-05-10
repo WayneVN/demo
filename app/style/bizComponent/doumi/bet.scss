@@ -1,0 +1,81 @@
+.doumi-dialog {
+
+    .bet {
+        .content-container {
+            padding: 10px 20px;
+            height: 150px;
+        }
+    }
+
+
+    .bet-container {
+        width: 230px;
+        margin-left: 240px;
+
+        .option-line {
+            border-bottom: $st-border;
+            .option {
+                font-size: 26px;
+            }
+
+            .option-1 {
+                color: #ff5959;
+            }
+
+            .option-2 {
+                color: #666;
+            }
+
+            .number {
+                font-size: 30px;
+            }
+        }
+
+        .value-line {
+            line-height: 24px;
+            height: 24px;
+            margin-bottom: 3px;
+            .number {
+                font-size: 18px;
+                margin: 0 10px;
+                color: $st-color-orange; 
+            }
+        }
+
+        .bet-item {
+            display: inline-block;
+            height: 20px;
+            width: 46px;
+            line-height: 18px;
+            border: $st-border;
+            text-align: center;
+            margin: 0 5px 5px 0;;
+            cursor: pointer;
+            font-size: 12px;
+
+            &.current {
+                border-color: #ff5959;
+            }
+
+            &.disabled {
+                cursor: default;
+                background-color: #eee;
+            }
+        }
+        
+        .red-btn {
+            float: right;
+            position: relative;
+            top: -3px;
+        }
+
+        .special-line {
+            margin: 10px 0;
+        }
+        .special {
+            font-size: 28px;
+            color: $st-color-orange;
+            margin: 0 10px;
+        }
+    }
+}

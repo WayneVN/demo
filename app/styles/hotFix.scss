@@ -1,0 +1,10 @@
+// 现在的打包可能会重复属性删掉，对css hack的属性有影响，这里用来做一些修复工作
+
+.caret {
+    border-top: 4px dashed; 
+}
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret
+{
+    border-bottom: 4px dashed;
+}

@@ -1,0 +1,125 @@
+// #fdad2a
+$color-table-font:#c6c6c6;
+$color-info:#707070;
+$color-help-heigiht:#284a7d;
+.c-bg {
+    background-color: $color-body-grey;
+}
+.help-info {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    color:$color-info;
+    margin-bottom: 20px;
+    .com-upload-warp {
+        display: inline-block;
+    }
+    .panel-row{
+      margin-bottom: 20px;
+    }
+}
+.help-upload {
+  margin-left: 60px;
+}
+.help-title {
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 20px;
+    color:$color-info;
+}
+.help-img {
+    margin-bottom: 20px;
+}
+.help-table {
+    width: 960px;
+    border: none;
+    td {
+        border: none;
+        background-color: $color-body-grey;
+    }
+    thead {
+        border-bottom:  1px solid #aaa;
+        td {
+            font-size: 16px;
+            text-align: center;
+            color:$color-info;
+        }
+    }
+    tbody {
+        td {
+            font-size: 14px;
+            color:$color-table-font;
+            text-align: center;
+        }
+        .fist-line {
+            background-color: #f9f9f9;
+        }
+    }
+}
+.help-heigiht {
+    color:$color-help-heigiht;
+}
+.help-heigiht-link {
+    color:$color-help-heigiht;
+    text-decoration: underline;
+}
+.help-form {
+    margin: 0 auto;
+    width: 350px;
+    font-size: 16px;
+    color:$color-info;
+    .help-row {
+        margin: 0 auto;
+        height: 36px;
+        margin-bottom: 10px;
+        label {
+            float: left;
+            width: 230px;
+            line-height: 36px;
+            text-align: left;
+            display: inline-block;
+        }
+        input {
+            float: left;
+            height: 34px;
+            width: 117px;
+            position: relative;
+        }
+        .help-btn {
+            padding: 5px 10px;
+            color:white;
+            background-color: $color-orange;
+            border-radius: 2px;
+            display: inline-block;
+            position: absolute;
+            right: 140px;
+        }
+    }
+}
+.btn-step-next {
+    margin-left: 40px;
+}
+.help-p-info {
+    float: left;
+    display: inline-block;
+    color: $color-grey;
+    margin-left: 30px;
+    .panel-row {
+        .help-label {
+            font-weight: normal;
+            padding-right: 20px;
+        }
+    }
+
+}
+.help-er {
+    width: 120px;
+    float: left;
+}
+.er-warp {
+    padding-left: 120px;
+    .help-p-info {
+        float: left;
+        margin-left: 20px;
+    }
+}

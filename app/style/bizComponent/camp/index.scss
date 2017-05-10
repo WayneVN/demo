@@ -1,0 +1,64 @@
+.banner {
+  width: 100%;
+  height: 290px;
+  background: url('~!file!../../images/background.png') no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  .banner-warp {
+      width: 960px;
+      margin: 0px auto;
+      height: 290px;
+      position: relative;
+      background: url('~!file!../../images/bannerBg.png') no-repeat;
+      background-position: 112px 32px;
+      .xly-btn {
+          position: absolute;
+          background: url('~!file!../../images/btn-xly.png') no-repeat;
+          background-size: 105px;
+          width: 105px;
+          height: 63px;
+          left: 50%;
+          bottom: 20px;
+          margin-left: -190px;
+          color: white;
+          font-size: 18px;
+          line-height: 43px;
+          text-align: center;
+          display: inline-block;
+          &:hover {
+              background: url('~!file!../../images/btn-xly-hover.png') no-repeat;
+              background-size: 105px;
+          }
+      }
+      .xly-btn1 {
+          @extend .xly-btn;
+          margin-left: -82px;
+      }
+      .xly-status {
+          position: absolute;
+          left: 50%;
+          bottom: 88px;
+          margin-left: -175px;
+      }
+      .xly-date {
+          position: absolute;
+          font-size: 16px;
+          left: 50%;
+          margin-left: -150px;
+          font-size: 24px;
+          color: white;
+          bottom: 130px;
+      }
+  }
+  .banner-warp-success {
+      width: 960px;
+      margin: 0px auto;
+      height: 290px;
+      position: relative;
+      background: url('~!file!../../images/bannerSuccess.png') no-repeat;
+      background-position: 112px 32px;
+  }
+  .banner-fdj {
+    margin: 26px auto;
+  }
+}

@@ -1,0 +1,87 @@
+// bower import
+@import '../vendor/marx/scss/marx';
+@import '../vendor/font-awesome/scss/font-awesome';
+@import './record/alert';
+@import 'bsbanner';
+
+@import 'standard';
+
+@import 'variables';
+@import 'common';
+@import "iconfont";
+@import 'fonts';
+
+@import 'modal';
+@import 'search';
+@import 'tooltip';
+
+@import 'btn';
+
+@import 'head';
+@import 'foot';
+@import 'panel';
+@import 'table';
+@import 'tip';
+@import 'progress';
+@import 'list';
+@import 'slider';
+@import 'input';
+@import 'animate';
+@import 'chart';
+@import 'checkPanel';
+@import 'form';
+@import 'pagination';
+@import 'loading';
+@import 'shortcutBox';
+@import 'report';
+@import 'breadcrumb';
+
+@import 'guide';
+
+@import "margin";
+
+// 记账部分
+@import './record/main';
+
+@import 'index';
+
+@import 'dialog';
+
+@import 'hotFix';
+
+// 春训营
+@import './spring/main';
+
+//训练营部分
+@import "./camp/main";
+
+//内部交易二级页面
+@import "./internal/main";
+
+@import "usercenter";
+
+//交易追踪－上传流水页面
+@import "tracking";
+
+//交易追踪－上传流水页面-弹出框
+@import "trackingModal";
+
+@import "page/entry";
+
+@import "bizComponent/entry";
+@import "component/entry";
+
+// 交易追踪- 抽奖相关
+@import "bizComponent/tracking/lottery";
+
+// 训练营-报名中心
+@import "bizComponent/camp/enrol";
+
+// 记账-交易诊断
+@import "bizComponent/diagnosed/index";
+
+@import "bizComponent/tracking/index";
+
+
+// 首页部宣传banner
+@import "bottomBanner";

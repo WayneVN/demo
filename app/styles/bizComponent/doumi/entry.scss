@@ -1,0 +1,46 @@
+.doumi-entry {
+    display: none;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+
+    border: 1px solid #ff3e3e;
+    border-radius: 3px;
+
+    position: fixed;
+    right: 50px;
+    top: 300px;
+
+    .title {
+        background-color: #ff3e3e;
+        color: #fff;
+        font-size: 13px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .doumi-icon-container {
+        text-align: center;
+        position: relative;
+        top: -7px;
+    }
+
+    .doumi-icon {
+        height: 60px;
+    }
+
+    .number {
+        position: absolute;
+        top: -10px;
+        right: -7px;
+        width: 20px;
+        height: 20px;
+        background: #c00;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 19px;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}

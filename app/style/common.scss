@@ -1,0 +1,18 @@
+@import '../vendor/marx/scss/marx';
+@import './standard';
+@import './variables';
+@import './function';
+@import './component/foot';
+@import './component/head';
+@import './component/usercenter';
+@import './component/tooltip';
+@import './component/modal';
+@import './component/panel';
+@import './component/dialog';
+@import './component/btn';
+@import './component/page';
+@import './bizComponent/login';
+@import './bizComponent/doumi/main';
+
+// 首页部宣传banner
+@import "bottomBanner";

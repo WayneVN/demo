@@ -1,0 +1,156 @@
+.stock-dialog {
+
+    .k-container,
+    .line-container
+    {
+        width: 640px;
+        height: 496px;
+        padding: 10px 0;
+        position: relative;
+
+        $border: 1px solid #c9c9c9;
+
+        .line-head,
+        .k-head
+        {
+            border-bottom: 4px solid #696969;
+            margin: 0 24px 0 35px;
+
+            .type-container {
+                display: inline-block;
+            }
+            .k-type {
+                border-top: $border;
+                border-left: $border;
+                background-color: #f2f2f2;
+                color: $st-color-gray;
+                font-size: 12px;
+                padding: 5px 10px;
+                display: inline-block;
+                cursor: pointer;
+
+                &:last-child {
+                    border-right: $border;
+                }
+
+                &.active {
+                    color: #fff;
+                    background-color: #696969;
+                    border-color: #696969;
+                }
+            }
+
+            .stock-type {
+                float: right;
+                font-size: 12px;
+                color: $st-color-orange;
+                border: $border;
+                padding: 2px 18px;
+                margin-top: 3px;
+            }
+        }
+
+        .k-chart {
+            height: 336px;
+        }
+
+        .bar-container {
+            position: relative;
+        }
+
+        .volume-number {
+            margin-left: 40px;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        .k-chart-container {
+            position: relative;
+        }
+
+        .ma-number {
+            position: absolute;
+            top: 10px;
+            left: 65px;
+            font-size: 14px;
+
+            span {
+                margin-right: 10px;
+            }
+        }
+
+        .bar-chart {
+            height: 90px;
+        }
+
+        .sk-circle{
+            position: absolute;
+            top: 150px;
+            left: 50%;
+        }
+
+        .no-data,
+        .loading-container {
+            position: absolute;
+            top: 150px;
+            left: 300px;
+        }
+
+        .no-data {
+            display: none;
+        }
+
+        .icon-container {
+            position: absolute;
+            top: 50px;
+            right: 25px;
+
+            .iconfont {
+                font-size: 36px;
+            }
+
+            .icon-nostoploss {
+                color: #F7B237;
+            }
+
+            .icon-stoploss {
+                color: #E84D4D;
+            }
+        }
+    }
+
+    .line-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f2f2f2;
+
+        .back {
+            margin-left: 50px;
+            cursor: pointer;
+            background-color: #ff5959;
+            display: inline-block;
+
+            line-height: 20px;
+            height: 20px;
+
+            font-size: 12px;
+            color: #fff;
+            width: 85px;
+            text-align: center;
+        }
+
+        .chart-container {
+            height: 443px;
+            .line-chart {
+                height: 443px;
+            }
+            .bar-chart {
+                height: 0px;
+            }
+        }
+    }
+
+}

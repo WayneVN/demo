@@ -1,0 +1,16 @@
+.input-default {
+  text-align: center;
+  background-color: $color-white;
+  color:$color-base-font;
+  border:1px solid $color-panel-title;
+  display: inline-block;
+  outline: none;
+  padding: 0 !important;
+  width: 58px !important;;
+  height: 22px;
+}
+.input-sm {
+  @extend .input-default;
+  width: 48px !important;
+  height: 22px;
+}

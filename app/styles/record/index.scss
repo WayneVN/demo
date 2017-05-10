@@ -1,0 +1,122 @@
+.cards {
+  $card-height:100px;
+  width: 100%;
+  height: $card-height;
+  margin: 20px 0;
+  border-left: 1px solid #e4e8f3;
+
+  .card-item {
+    width: 205px;
+    // background-color: $color-step-panel;
+    border: 1px solid #e4e8f3;
+    border-left: none;
+    display: inline-block;
+    height: $card-height;
+    overflow: hidden;
+    text-align: center;
+    h3 {
+      color: #999;
+      font-size: 16px;
+      margin: 0;
+      position: relative;
+
+      .tooltip-container {
+        position: absolute;
+      }
+      .cur-icon {
+          margin-left: 5px;
+      }
+    }
+    .sum {
+        margin: 30px 0 5px;
+        text-align: center;
+        color: $color-red;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+    }
+    .sum-green {
+      @extend .sum;
+      color:$color-green;
+    }
+    .sum-gray {
+      @extend .sum;
+      color:$color-grey;
+    }
+    .fa {
+      color:$color-nav-menu;
+    }
+  }
+
+  .composite-index-area {
+    height: $card-height;
+    border: 1px solid #e4e8f3;
+    display: inline-block;
+    width: 205px;
+    float: right;
+    padding-top: 3px;
+
+    .sum {
+      margin: 30px 0 5px;
+      text-align: center;
+      color: $color-red;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+      width: 205px;
+      border: 1px solid #e4e8f3;
+      border-left: none;
+      display: inline-block;
+      height: 100px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .sum-green {
+      @extend .sum;
+      color:$color-green;
+    }
+    .sum-gray {
+      @extend .sum;
+      color:$color-grey;
+      margin: 28px 0 5px;
+      border: 0;
+      height: auto !important;
+    }
+    h3 {
+      color: #999;
+      font-size: 16px;
+      margin: 0;
+      position: relative;
+      text-align: center;
+      .tooltip-container {
+        position: absolute;
+      }
+      .cur-icon {
+        margin-left: 5px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      text-align: right;
+      font-size: 14px;
+    }
+    .composite-lg {
+        padding-left: 8px;
+        width: 70px;
+    }
+    .composite-first {
+        font-size: 16px;
+        width: auto;
+    }
+    .composite-lg-center {
+        @extend .composite-lg;
+        text-align: center;
+    }
+    .composite-sm {
+        width: 45px;
+        padding-left: 8px;
+    }
+
+  }
+}

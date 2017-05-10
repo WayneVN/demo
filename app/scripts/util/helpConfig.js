@@ -1,0 +1,221 @@
+"use strict";
+
+var helpConfig = [{
+  fileKey: '万和证券',
+  len: '3'
+}, {
+  fileKey: '万联证券',
+  len: '1'
+}, {
+  fileKey: '东兴证券',
+  len: '1'
+}, {
+  fileKey: '东北证券',
+  len: '2'
+}, {
+  fileKey: '东吴证券',
+  len: '2'
+}, {
+  fileKey: '东方证券',
+  len: '2'
+}, {
+  fileKey: '东海证券',
+  len: '3.jpg'
+}, {
+  fileKey: '中信建投',
+  len: '2'
+}, {
+  fileKey: '中信证券',
+  len: '1'
+}, {
+  fileKey: '中山证券',
+  len: '1'
+}, {
+  fileKey: '中投证券',
+  len: '2'
+}, {
+  fileKey: '中泰证券',
+  len: '2'
+}, {
+  fileKey: '中航证券',
+  len: '2'
+}, {
+  fileKey: '中邮证券',
+  len: '1'
+}, {
+  fileKey: '中银国际',
+  len: '3'
+}, {
+  fileKey: '众成证券',
+  len: '1'
+}, {
+  fileKey: '信达证券',
+  len: '2'
+}, {
+  fileKey: '光大证券',
+  len: '1'
+}, {
+  fileKey: '兴业证券',
+  len: '1'
+}, {
+  fileKey: '华安证券',
+  len: '1'
+}, {
+  fileKey: '华林证券',
+  len: '1'
+}, {
+  fileKey: '华泰证券',
+  len: '1'
+}, {
+  fileKey: '华融证券',
+  len: '3'
+}, {
+  fileKey: '华西证券',
+  len: '1'
+}, {
+  fileKey: '华金证券',
+  len: '3'
+}, {
+  fileKey: '华鑫证券',
+  len: '2'
+}, {
+  fileKey: '华龙证券',
+  len: '1'
+}, {
+  fileKey: '南京证券',
+  len: '1'
+}, {
+  fileKey: '国信证券',
+  len: '1'
+}, {
+  fileKey: '国开证券',
+  len: '1'
+}, {
+  fileKey: '国海证券',
+  len: '1'
+}, {
+  fileKey: '国盛证券',
+  len: '1'
+}, {
+  fileKey: '国都证券',
+  len: '1'
+}, {
+  fileKey: '大同证券',
+  len: '1'
+}, {
+  fileKey: '大通证券',
+  len: '3'
+}, {
+  fileKey: '天风证券',
+  len: '2'
+}, {
+  fileKey: '太平洋证券',
+  len: '2'
+}, {
+  fileKey: '安信证券',
+  len: '2'
+}, {
+  fileKey: '宏信证券',
+  len: '1'
+}, {
+  fileKey: '山西证券',
+  len: '2'
+}, {
+  fileKey: '川财证券',
+  len: '1'
+}, {
+  fileKey: '平安证券',
+  len: '1'
+}, {
+  fileKey: '广发证券',
+  len: '2'
+}, {
+  fileKey: '广州证券',
+  len: '2'
+}, {
+  fileKey: '开源证券',
+  len: '4'
+}, {
+  fileKey: '恒泰证券',
+  len: '2'
+}, {
+  fileKey: '招商证券',
+  len: '1'
+}, {
+  fileKey: '新时代证券',
+  len: '1'
+}, {
+  fileKey: '方正证券',
+  len: '1'
+}, {
+  fileKey: '日信证券',
+  len: '2'
+}, {
+  fileKey: '民族证券',
+  len: '2'
+}, {
+  fileKey: '江海证券',
+  len: '1'
+}, {
+  fileKey: '浙商证券',
+  len: '3'
+}, {
+  fileKey: '海通证券',
+  len: '2'
+}, {
+  fileKey: '渤海证券',
+  len: '1'
+}, {
+  fileKey: '湘财证券',
+  len: '1'
+}, {
+  fileKey: '爱建证券',
+  len: '1'
+}, {
+  fileKey: '申万宏源',
+  len: '3'
+}, {
+  fileKey: '第一创业',
+  len: '1'
+}, {
+  fileKey: '网信证券',
+  len: '1'
+}, {
+  fileKey: '联讯证券',
+  len: '3'
+}, {
+  fileKey: '英大证券',
+  len: '1'
+}, {
+  fileKey: '西南证券',
+  len: '1'
+}, {
+  fileKey: '西部证券',
+  len: '1'
+}, {
+  fileKey: '财富证券',
+  len: '2'
+}, {
+  fileKey: '财达证券',
+  len: '1'
+}, {
+  fileKey: '财通证券',
+  len: '1'
+}, {
+  fileKey: '银河证券',
+  len: '1'
+}, {
+  fileKey: '银泰证券',
+  len: '3'
+}, {
+  fileKey: '长城国瑞',
+  len: '2'
+}, {
+  fileKey: '长江证券',
+  len: '1'
+}, {
+  fileKey: '首创证券',
+  len: '2'
+}];
+
+module.exports = helpConfig;

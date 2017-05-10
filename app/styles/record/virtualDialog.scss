@@ -1,0 +1,42 @@
+.virtual-dialog-content {
+    padding: 30px 30px 30px 50px;
+    color: #999;
+
+    .title {
+        color: #666;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    input {
+        margin-right: 5px;
+        position: relative;
+        top: -3px;
+    }
+
+    label {
+        margin: 0;
+        font-weight: normal;
+        line-height: 14px;
+    }
+
+    .active {
+        color: #ffae00;
+    }
+
+    .btn-container {
+        text-align: right;
+
+        .btn {
+            background-color: #ffae00;
+            color: #fff;
+
+            &.disabled {
+                background-color: #d5d5d5;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

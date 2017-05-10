@@ -1,0 +1,331 @@
+$color-font:#6e8ebf;
+$color-danger:#f7654d;
+.head-upload {
+  background-color: $color-tally-bg;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 8px 20px;
+  .fa-warning {
+    color:$color-red;
+  }
+  .user-broker {
+    .broker {
+      color: #2e539a;
+      display: inline-block;
+      font-size: 14px;
+      margin: 0;
+    }
+    a {
+      color:#337ab7;
+    }
+  }
+  .webuploader-pick + div{
+    opacity: 0;
+    top: 0 !important;
+    left: 0 !important;
+    width: 122px !important;
+    height: 28px !important;
+  }
+  .webuploader-pick {
+    opacity: 1;
+  }
+  .text-danger {
+    color:$color-danger;
+    font-size: 13px;
+    text-align: left;
+    line-height: 29px;
+  }
+  .head-row {
+    width: 100%;
+    clear:both;
+    padding-bottom: 10px;
+    overflow: hidden;
+  }
+  .record-status {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border-top: 1px solid $white;
+    margin-top: 10px;
+    padding-top: 10px;
+    color:$color-font;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: left;
+    .fa-warning {
+      color:$color-report-red;
+    }
+  }
+  .upload-wrapper {
+    display: none;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    .upload-user-account {
+      width: 100%;
+      display: inline-block;
+      border-top: 1px solid $white;
+      font-size: 13px;
+      line-height: 29px;
+      padding: 10px 0;
+      .select-user-account {
+        height: 29px;
+        line-height: 29px;
+        width: 125px;
+        float: left;
+        margin-right: 10px;
+        outline: none;
+      }
+      .tally-btn {
+        line-height: 13px;
+        height: 29px;
+        font-size: 13px;
+      }
+    }
+    .upload-tip {
+      font-size: 12px;
+      color: $color-font;
+      clear: both;
+      margin: 0;
+    }
+    .filesList {
+      display: inline-block;
+      width: 100%;
+      color: $color-font;
+      font-size: 12px;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+      li {
+        width: 100%;
+        display: list-item;
+        text-align: left;
+        list-style: none;
+        padding-left: 5px;
+        &:hover {
+          background: #cfd5e1;
+        }
+        .removeFile {
+          margin-left: 20px;
+          &:hover {
+            @include ease(0.25);
+            color:$color-org;
+          }
+        }
+      }
+    }
+    .progress {
+      width: 300px;
+      height: 20px;
+      border-radius: 5px;
+      background: $color-body-grey;
+      overflow: hidden;
+      display: inline-block;
+      float: left;
+      margin: 0;
+      opacity: 0.7;
+      .progress-bar {
+        height: inherit;
+        border-radius: inherit;
+        background: $color-green;
+        width: 10px;
+      }
+    }
+  }
+}
+
+
+.upload-drop-warp {
+  cursor: pointer;
+  min-height: 36px;
+  max-height: 130px;
+  /* width: 918px; */
+  text-align: center;
+  color: $color-orange;
+  border: 1px solid;
+  padding: 15px 14px;
+  display: flex;
+  overflow-y: auto;
+  .upload-add {
+      $size: 50px;
+      display: block;
+      width: $size;
+      height: $size;
+      //background: #fee6bd;
+      background: #ffb54e;
+      color: #fff;
+      float: left;
+      .fa-plus {
+          line-height: $size;
+          font-size: $size/2;
+          vertical-align: super;
+      }
+  }
+  .upload-files {
+    padding: 13px 6px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color: #7bc07f;
+    width: 300px;
+    .fa-file-excel-o , .fa-file-pdf-o {
+      font-size: 36px;
+      display: inline-block;
+      margin-top: -7px;
+    }
+    .fa-times-circle {
+      display: inline-block;
+      position: absolute;
+      z-index: 10;
+      font-size: 18px;
+      top: 2px;
+      right: 2px;
+    }
+    .upload-name {
+      display: inline-block;
+      margin: 0;
+    }
+    &:hover {
+      @include ease(500);
+      background-color: $color-grey;
+      .fa-times-circle  {
+        display: block;
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.disable {
+  color: $color-dialog-but-disable;
+  background-color: $color-dialog-but-bg-disable;
+  margin: 0 !important;
+  cursor: no-drop;
+}
+
+.panel-body {
+  .toast-top-right + div {
+    @extend .upload-drop-warp;
+    margin: 10px 0;
+    padding: 1px;
+    overflow: hidden;
+  }
+}
+
+.warp-com-upload-warp {
+    @extend .com-upload-warp;
+    $h: 88px;
+    overflow: hidden;
+    .upload-drop-warp {
+        height: $h;
+        display: inline-block;
+        line-height: $h;
+        float: left;
+        overflow: hidden;
+        .upload-file {
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            color: #1a264b;
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin: 0px 8px;
+            display: inline-table;
+
+            .icon-newfile {
+                font-size: 35px;
+                line-height: 35px;
+                text-align: center;
+                margin-left: 17px;
+            }
+            .fa-times-circle {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                display: none;
+                color: $color-red;
+            }
+            &:hover {
+                .fa-times-circle {
+                    display: block;
+                }
+            }
+            .upload-name {
+                text-align: left;
+                line-height: 18px;
+                font-size: 12px;
+                display: inline-block;
+                height: 18px;
+                overflow: hidden;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                margin-top: 5px;
+                color: $color-progress-msg;
+            }
+        }
+        .upload-info {
+            line-height: 54px;
+            color: $color-base-font;
+            text-align: left;
+        }
+    }
+    .btn-upload {
+        margin-top: 10px;
+        padding: 0 10px;
+        height: 38px;
+        line-height: 38px;
+        color: white;
+        float: right;
+        text-align: center;
+        background-color: $color-org;
+        border-radius: 2px;
+        &:hover {
+            background-color: $color-btn-org-active;
+        }
+        &:active {
+            background-color: $color-btn-org-hover;
+        }
+    }
+    .upload-text-num {
+        float: right;
+        font-size: 16px;
+        line-height: 38px;
+        margin-top: 10px;
+        margin-right: 10px;
+        color: #666;
+    }
+    .btn-upload-dis {
+        @extend .btn-upload;
+        background-color: $color-disabled;
+        cursor: not-allowed;
+        &:hover {
+            background-color: $color-disabled;
+        }
+        &:active {
+            background-color: $color-disabled;
+        }
+    }
+    .btn-report-active {
+        display: inline-block;
+        width: $h;
+        height: $h;
+        border: 1px solid $color-orange;
+        color: $color-orange;
+        background-color: white;
+        font-size: 18px;
+        letter-spacing: 10px;
+        line-height: 34px;
+        text-align: right;
+    }
+    .btn-report-switch {
+        overflow: hidden;
+        @include horizontal-center();
+    }
+}
+.icon-newfile {
+    color: #1a264b;
+}

@@ -1,0 +1,199 @@
+.internal-dialog {
+    .lock-container {
+
+        .qa-mark {
+            margin-left: 10px;
+        }
+
+        .legend-container {
+            overflow: hidden;
+        }
+
+        .lock-panel {
+            position: relative;
+            clear: both;
+        }
+
+        .lock-name {
+            color: #244375;
+            font-size: 20px;
+            margin: 30px 35px;
+        }
+
+        .lock-legend {
+            margin: 0 35px;
+            position: relative;
+            z-index: 5;
+
+            .text-line {
+                height: 37px;
+                line-height: 37px;
+                padding: 0 10px;
+                border: 1px solid;
+                position: relative;
+                background-color: #fff;
+                @extend .text-overflow;
+
+                .gray-text {
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+
+            .main-text {
+                font-size: 17px;
+            }
+
+            .move-panel {
+                position: absolute;
+                width: 100%;
+                color: #fff;
+                font-size: 12px;
+                top: -42px;
+
+
+                .legend-detail {
+                    padding: 8px 10px;
+
+                    div {
+                        height: 21px;
+                        line-height: 21px; 
+
+                        &.special {
+                            padding-left: 46px;
+                        }
+                    }
+
+                    .div-group {
+                        height: auto;
+                    }
+
+                    .legend-name {
+                        font-size: 13px;
+                        height: 87px;
+                        float: left;
+                        width: 35px;
+                    }
+                }
+
+                &.gr-panel {
+                    top: -78px;
+                    .legend-detail {
+                        height: 115px;
+                    }                    
+                }
+
+                
+            }
+
+            .arrow-container {
+                height: 18px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    border: 7px solid;
+                    border-color: #797979 transparent transparent;
+                    position: absolute;
+                    top: 6px;
+                    left: 103px;
+                }
+            }
+
+            .lock-grade-container {
+                float: right;
+                height: 56px;
+                width: 700px;
+            }
+
+            .lock-grade {
+                margin-left: 10px;
+                position: relative;
+                width: 219px;
+                float: left;
+            }
+        }
+
+        .lock-grade-peg {
+            color: #5d99e6;
+
+            .text-line {
+                border-color: #5d99e6;
+            }
+
+            .move-panel {
+                background-color: #5d99e6;
+            }
+        }
+
+        .lock-grade-gr {
+            color: #90cdfd;
+            .text-line {
+                border-color: #90cdfd;
+            }
+
+            .move-panel {
+                background-color: #90cdfd;
+            }
+        }
+
+        .lock-grade-pe {
+            color: #a9a9a9;
+
+            .text-line {
+                border-color: #a9a9a9;
+            }
+
+            .move-panel {
+                background-color: #a9a9a9;
+            }
+        }
+
+        .legend-text {
+            font-size: 16px;
+            position: relative;
+            padding-left: 30px;
+            height: 23px;
+            line-height: 23px;
+            width: 100px;
+
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 4px;
+                left: 0;
+            }
+        }
+
+        .legend-text-1 {
+            margin-bottom: 10px;
+            &:after {
+                background-color: #cfe0fc;
+            }
+        }
+
+        .legend-text-2 {
+            &:after {
+                background-color: #90cdfd;
+            }
+        }
+
+        .chart-container {
+            height: 336px;
+        }
+
+        .grade-tip-peg {
+            width: 200px;
+            z-index: 6;
+            top: 37px;
+            right: -260px;
+            color: #444;
+        }
+    }
+}

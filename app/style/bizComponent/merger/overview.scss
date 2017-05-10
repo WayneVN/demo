@@ -1,0 +1,177 @@
+.merger-dialog {
+    .overview-box {
+        .before {
+            width: 260px;
+            float: left;
+        }
+        .after {
+            width: 260px;
+            float: right;
+        }
+        .chart-container {
+            margin: 0 260px;
+            padding-top: 19px;
+            position: relative;
+            height: 334px;
+
+            .legend-container {
+                margin-left: 20px;
+                width: 200px;
+                height: 40px;
+            }
+
+            .icon-container {
+                position: absolute;
+                right: 20px;
+                top: 19px;
+                color: #f8989a;
+                z-index: 10;
+
+                img {
+                    width: 80px;
+                    cursor: pointer;
+                }
+            }
+
+            .chart-legend {
+                height: 20px;
+                line-height: 20px;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                }
+
+                &.cash-legend {
+                    color: #f8989a;
+
+                    &:before {
+                        background-color: #f8989a;
+                    }
+                }
+
+                &.stock-legend {
+                    color: #e4493b;
+
+                    &:before {
+                        background-color: #e4493b;
+                    }
+                }
+            }
+
+            .chart {
+                height: 225px;
+            }
+        }
+
+        .show-text {
+            text-align: center;
+            position: absolute;
+            top: 126px;
+            width: 100%;
+
+            .number {
+                font-size: 40px;
+            }
+        }
+        
+        .text {
+            padding: 2px 30px 0;
+            color: #c00;
+            text-align: center;
+            position: relative;
+
+            .first-line {
+                border-bottom: 1px solid #c00;
+                font-size: 18px;
+                height: 36px;
+                position: relative;
+
+                .number {
+                    font-size: 28px;
+                    line-height: 28px;
+                }
+
+                .right {
+                    color: $st-color-orange;
+                    border: 1px solid $st-color-orange;
+                    text-align: center;
+                    width: 32px;
+                    height: 32px;
+                    line-height: 15px;
+                    font-size: 13px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .qa-mark {
+                    position: absolute;
+                    top: -9px;
+                    right: -9px;
+                }
+            }
+
+        }
+
+        .grade-tip-activism {
+            right: -500px;
+            top: 100px;
+            width: 200px;
+        }
+
+        .black-line {
+            background-color: #666;
+            color: #fff;
+            height: 22px;
+            line-height: 22px;
+            padding-left: 20px;
+        }
+        .overview-table {
+            td {
+                &:first-child {
+                    width: 143px;
+                }
+                &:last-child {
+                    text-align: right;
+                    padding-right: 12px;
+                }
+            }
+            .icon-add,
+            .icon-reduce {
+                display: none;
+                font-size: 20px;
+                line-height: 26px;
+                position: relative;
+                top: 2px;
+            }
+            .holder-reduce {
+                .icon-reduce {
+                    display: inline;
+                    color: $st-color-green;
+                }
+            }
+            .holder-add {
+                .icon-add {
+                    display: inline;
+                    color: $st-color-red;
+                }
+            }
+            .holder-same {
+                .icon-add {
+                    display: inline;
+                    color: #fff;
+                }
+            }
+        }
+
+        .stock-tip {
+            clear: both;
+            text-align: right;
+            padding: 10px 0;
+        }
+    }
+}

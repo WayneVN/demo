@@ -1,0 +1,214 @@
+.panel-step-bg {
+  width: 710px;
+  .modal-content {
+    background-color: $color-step-panel;
+  }
+  .modal-header {
+      border: none;
+  }
+  .modal-body {
+      padding: 0;
+  }
+
+}
+
+.panel-step {
+  .panel-head {
+    border-bottom: 1px solid $color-modal-border;
+    width: 100%;
+    padding-bottom: 18px;
+    text-align: center;
+    h3 {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      color:$color-table-head;
+    }
+    span{
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: $size-dialog-title;
+      color:$color-dialog-title;
+    }
+    .panel-line {
+      width: 100%;
+      padding-left: 40px;
+      color:$color-table-head;
+      .short-title {
+        width: 300px;
+        text-align: left;
+        .s-title , .s-detail {
+          margin: 0;
+          padding: 0;
+          line-height: 36px;
+        }
+        .s-title {
+          font-size: 20px;
+          font-weight: bold;
+          display: inline-block;
+        }
+        .s-detail {
+          color: $color-tally-btn;
+          font-size: 16px;
+          display: inline-block;
+          padding-left: 30px;
+          line-height: 40px;
+        }
+      }
+      .s-info {
+        color: $color-dialog-lable;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  }
+  .panel-body {
+    min-height:150px;
+    //max-height: 420px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color:$color-table-head;
+    padding: 30px 50px 20px 50px;
+    width: 100%;
+    display: inline-block;
+
+    .panel-row {
+      margin-bottom: 20px;
+      display: inline-grid;
+      .panel-col{
+        display: inline-block;
+        label {
+          display: inline-block;
+          min-width: 100px;
+          font-size: 16px;
+          text-align: left;
+          color: $color-dialog-lable;
+        }
+      }
+      label {
+        display: inline-block;
+        min-width: 100px;
+        font-size: 16px;
+        text-align: left;
+        color: $color-dialog-lable;
+      }
+      .input-step {
+        height: 36px;
+        line-height: 33px;
+        font-size: 16px;
+        padding: 0;
+        padding-left: 8px;
+        -webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        border-radius:2px;
+        border: 1px solid $color-modal-border;
+        background-color: $white;
+        width: 140px;
+        color: $color-dialog-input;
+        outline: none;
+        margin-left: 30px;
+      }
+      span{
+        //margin-left: 20px;
+        //min-width: 60px;
+        color: $color-dialog-msg;
+        font-size: $size-dialog-msg;
+      }
+      .upload {
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .disable {
+        color: $color-dialog-but-disable;
+        background-color: $color-dialog-but-bg-disable;
+      }
+    }
+    .dpf{
+      display: flex;
+    }
+    .tipImg{
+      width:300px;
+    }
+    .imgRow{
+
+    }
+    .helpImg {
+        width: 150px;
+        height: 90px;
+        display: inline-block;
+        float: left;
+        margin-bottom: 5px;
+        cursor: pointer;
+        .bigImg {
+          width: inherit;
+          height: 100px;
+        }
+        .smallImg{
+          width: 50%;
+          height: 100px;
+        }
+        .helpInfo {
+          display: inline-block;
+          margin: 0 auto;
+          line-height: 14px;
+        }
+    }
+    .helpImg:nth-child(odd){
+      margin-right: 10px;
+    }
+    .helpImg-lg {
+      width: 98%;
+      margin: 10px;
+    }
+    .upload-warp-img {
+      min-height: 120px;
+      max-height: 260px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .upload-warp-pos {
+      height: 180px;
+    }
+    .a-blue{
+      color: $color-a-blue !important;
+      text-decoration: underline;
+    }
+
+  }
+  .panel-footer {
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+  }
+}
+
+.panel-step-center {
+  @extend .panel-step;
+}
+
+.panel-row-tag {
+  max-width: 220px;
+  display: inline-block;
+  .btn-arrow {
+    .arrow-text span,
+    .fa
+    {
+      color: $color-orange;
+      font-size: $size-tag-text;
+    }
+
+    &:after {
+      border-color:transparent #f9f9f9 transparent transparent;
+    }
+  }
+}
+
+.enrolment {
+  color: #999999;
+}

@@ -1,0 +1,37 @@
+.da-dialog {
+
+    .value {
+        position: relative;
+        .text-line {
+            line-height: 16px;
+            height: 16px;
+            margin-bottom: 10px;
+
+            .right {
+                color: $st-color-orange;
+                font-size: 14px;
+            }
+        }
+
+        .right-number {
+            text-align: right;
+        }
+
+        .grade-tip {
+            top: -110px;
+            right: -200px;
+
+            table {
+                width: 160px;
+            }
+
+        }
+
+        .my-table {
+            td {
+                width: 230px;
+            }
+        }
+    }
+    
+}

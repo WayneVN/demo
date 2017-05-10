@@ -1,0 +1,169 @@
+$text-black: #666 !default;
+$text-red: #fb6363 !default;
+.enrol-panel {
+    width: 530px;
+    .panel-head {
+        border: none;
+    }
+}
+.enrol-panel-body {
+    padding: 0px 30px;
+    overflow: hidden;
+    .enrol-row {
+        display: block;
+        overflow: hidden;
+        .btn-orange {
+            display: block;
+            width: 80px;
+            margin: 0px auto;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .enrol-label {
+            float: left;
+            color: $text-black;
+            font-size: 20px;
+            margin: 0px;
+        }
+        .enrol-price {
+            float: right;
+            color: $text-red;
+            font-size: 20px;
+        }
+        .enrol-info {
+            float: right;
+            line-height: 27px;
+            font-size: 18px;
+        }
+        .enrol-switch-label {
+            line-height: 26px;
+            font-size: 16px;
+            .enrol-zkm-link {
+                color: #284a7d;
+                margin-left: 5px;
+            }
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        .enrol-zfb {
+            $size: 175px;
+            display: block;
+            width: $size;
+            height: 205px;
+            margin: 0px auto;
+            margin-top: 10px;
+            p {
+                margin: 0px;
+                font-size: 14px;
+                color: #999;
+                text-align: center;
+            }
+        }
+        .enrol-zkm-price {
+            color: $text-red;
+            font-size: 20px;
+        }
+
+        .enrol-zkm-panel {
+            width: 100%;
+            min-height: 70px;
+            padding: 0px 10px;
+            background: #f2f3f3;
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            .enrol-zkm-label {
+                color: $text-black;
+                font-size: 18px;
+                float: left;
+                margin-right: 10px;
+                margin: 0px;
+                margin-top: 15px;
+            }
+            .enrol-zkm-input {
+                width: 150px;
+                height: 30px;
+                line-height: 30px;
+                outline: none;
+                border: 1x solid #aaa;
+                float: left;
+                margin-top: 20px;
+                margin-right: 10px;
+            }
+            .enrol-zkm-input-lg {
+                @extend .enrol-zkm-input;
+                width: 210px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .enrol-zkm {
+                padding: 0px 10px;
+                /* background: #ffab35; */
+                background: #a7a8a9;
+                border-radius: 5px;
+                color: white;
+                font-size: 18px;
+                margin-top: 20px;
+                display: inline-block;
+                line-height: 30px;
+                height: 30px;
+            }
+            .enrol-zkm-btn {
+                @extend .enrol-zkm;
+                border-radius: 2px;
+                padding: 0px 20px;
+                background: #ffab35;
+                margin-right: 10px;
+            }
+            .enrol-zkm-price {
+                float: right;
+                color: $text-red;
+                font-size: 20px;
+                line-height: 70px;
+            }
+            .enrol-text {
+                font-size: 14px;
+                margin: 0px;
+                margin-top: 25px;
+            }
+            .enrol-text-err {
+                font-size: 14px;
+                margin: 0px;
+                margin-top: 25px;
+                color: $text-red;
+            }
+        }
+    }
+    .enrol-detail {
+        font-size: 12px;
+        color: #999;
+    }
+}
+
+.enrol-input-label {
+    color: $text-black;
+    font-size: 16px;
+    line-height: 30px;
+    float: left;
+}
+.enrol-input-text {
+    width: 220px;
+    height: 30px;
+    border: 1px solid #adadad;
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+    float: left;
+    outline: none;
+}
+.enrol-input-helper {
+    margin-left: 10px;
+    color: #284a7d;
+    line-height: 30px;
+
+}

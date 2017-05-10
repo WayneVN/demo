@@ -1,0 +1,146 @@
+.stock-dialog {
+    .stock-dialog-basic-info {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        color: #fff;
+        background-color: $st-color-gray;
+
+        &.stock-color-red {
+            background-color: $st-color-red;
+
+            .btn-arrow {
+                &:after {
+                    border-color: transparent $st-color-red transparent transparent;
+                }
+            }
+        }
+
+        &.stock-color-green {
+            background-color: $st-color-green;
+
+            .btn-arrow {
+                &:after {
+                    border-color: transparent $st-color-green transparent transparent;
+                }
+            }
+        }
+
+        .number-container {
+            display: inline-block;
+            width: 420px;
+        }
+
+        .tag-container {
+            display: inline-block;
+            width: 180px;
+        }
+
+        .market-value {
+            display: inline-block;
+            width: 125px;
+        }
+
+        .name {
+            font-size: 20px;
+        }
+
+        .code {
+            margin: 0 5px;
+            font-size: 16px;
+        }
+
+        .anno-type {
+            font-size: 12px;
+            color: #294a7e;
+            margin-right: 10px;
+            line-height: 12px;
+            cursor: pointer;
+
+            .anno-status {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                border: 1px solid #294a7e;
+                text-align: center;
+                margin-right: 5px;
+            }
+
+            .anno-gou {
+                font-family: '微软雅黑','宋体', monospace;
+            }
+        }
+
+        .price,
+        .delta-price,
+        .delta-range
+        {
+            font-size: 18px;
+        }
+
+        .price {
+            width: 80px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .delta-price,
+        .delta-range
+        {
+            margin-left: 5px;
+        }
+
+        .btn-arrow {
+            font-size: 12px;
+            border-color: #fff;
+            top: -2px;
+            line-height: 18px;
+            padding: 0 8px;
+
+            &:before {
+                border-width: 10px;
+                left: -20px;
+                border-color: transparent #fff transparent transparent;
+            }
+            &:after {
+                border-width: 9px;
+                left: -18px;
+                border-color: transparent $st-color-gray transparent transparent;
+            }
+
+            .number {
+                position: absolute;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background: #294a7e;
+                top: -5px;
+                line-height: 14px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+
+        .btn {
+            background-color: #294a7e;
+            font-size: 12px;
+            line-height: 12px;
+            border-radius: 0;
+            position: relative;
+            top: -2px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .close-icon {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            line-height: 0;
+            cursor: pointer;
+        }
+
+    }
+}

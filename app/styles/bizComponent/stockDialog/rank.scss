@@ -1,0 +1,179 @@
+.stock-dialog {
+    .rank {
+        float: right;
+        width: 250px;
+        height: 410px;
+        padding: 14px 10px 10px 0;
+
+        $border: 1px solid #c9c9c9;
+
+        .name {
+            border-bottom: 4px solid #696969;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .no-data {
+            height: 82px;
+            line-height: 82px;
+            text-align: center;
+            border: $border;
+            border-top: none;
+        }
+
+        .content {
+            border: $border;
+            border-top: none;
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+
+
+            .left-container {
+                border-right: $border;
+                height: 89px;
+                width: 120px;
+            }
+
+            .right-container {
+                position: absolute;
+                top: 0;
+                left: 120px;
+                width: 236px;
+                height: 89px;
+            }
+
+            .chart-panel {
+                width: 118px;
+                height: 89px;
+                position: absolute;
+                top: 0;
+                background-color: #fff;
+
+                &.last-chart {
+                    left: 119px;
+                }
+            }
+            .gauge-chart {
+                width: 118px;
+                height: 89px;
+            }
+
+            .big-line,
+            .big-line-1
+            {
+                text-align: center;
+                font-size: 32px;
+                font-weight: bold;
+                line-height: 40px;
+                cursor: pointer;
+                position: relative;
+            }
+
+            .big-line-1 {
+                font-size: 28px;
+            }
+
+            .small-line {
+                font-size: 12px;
+                line-height: 25px;
+                height: 25px;
+                padding-left: 7px;
+
+                .number {
+                    color: $st-color-orange;
+                }
+
+                .iconfont {
+                    font-size: 23px;
+                    vertical-align: bottom;
+                    color: #999;
+                    float: right;
+                    margin-right: 4px;
+                    cursor: pointer;
+                }
+            }
+
+            .small-text {
+                font-size: 14px;
+                font-weight: normal;
+
+                &.special-text {
+                    position: absolute;
+                    right: 5px;
+                    top: 25px;
+                }
+            }
+
+            .text {
+                width: 100%;
+                position: absolute;
+                line-height: 20px;
+                top: 3px;
+
+                .left {
+                    margin-left: 5px;
+                    font-size: 16px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .right {
+                    font-size: 12px;
+                    display: inline-block;
+                    color: $st-color-orange;
+                    width: 30px;
+                    line-height: 16px;
+                }
+
+                .center-text {
+                    display: inline-block;
+                    width: 48px;
+                    text-align: center;
+                    vertical-align: top;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .select-area {
+            font-size: 13px;
+            line-height: 30px;
+            margin-top: 23px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 8px solid;
+                border-color: #696969 transparent transparent transparent;
+                right: 10px;
+                top: 10px;
+            }
+
+            .text {
+                height: 30px;
+                border-bottom: 4px solid #696969;
+            }
+
+            .input-container {
+                display: none;
+                color: #fff;
+                background-color: #666;
+                padding: 0 10px;
+
+                label {
+                    margin-right: 20px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                input {
+                    margin: -4px 2px 0 0;
+                }
+            }
+        }
+    }
+}

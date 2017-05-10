@@ -1,0 +1,50 @@
+.tip {
+  height: 21px;
+  padding: 0 10px;
+  border-radius: 10px;
+  color:$color-white;
+  line-height: 21px;
+  margin-left: 10px;
+}
+.tip-red {
+  @extend .tip;
+  background-color:$color-red;
+}
+.tip-lg {
+  @extend .tip;
+  height: 21px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  width: 70px;
+  text-align: center;
+  display: inline-block;
+  background-color: $color-white;
+  border: 1px solid $color-org;
+  color:$color-org;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.tip-green {
+  border: 1px solid $color-tip-green;
+  color:$color-tip-green;
+}
+.tip-red {
+  border: 1px solid $color-org;
+  color:$color-org;
+}
+.num-warp {
+  width: 48px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 auto;
+  color:$color-base-font;
+  font-size: 12px;
+}
+.tip-role {
+  text-align: center;
+  margin-top: 20px;
+}

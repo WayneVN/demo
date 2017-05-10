@@ -1,0 +1,212 @@
+.lty-xzp {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    margin-left: 500px;
+    top: 400px;
+    cursor: pointer;
+}
+.lty-dzp {
+    position: absolute;
+    z-index: 101;
+    top: -160px;
+    left: 50%;
+    margin-left: -449px;
+    .dzp_btn {
+        $size: 97px;
+        position: absolute;
+        z-index: 102;
+        top: 387px;
+        left: 50%;
+        margin-left: -78px;
+        background: url('../images/dzp_btn.png') no-repeat;
+        width: $size;
+        height: $size;
+        @include ease(0.2);
+
+        &:hover {
+            background: url('../images/dzp_hg.png') no-repeat;
+        }
+        &:active {
+            background: url('../images/dzp_dj.png') no-repeat;
+        }
+    }
+    .lty-dzp-img {
+        position: relative;
+        z-index: 101;
+    }
+    .lty-zz {
+        position: absolute;
+        z-index: 101;
+        top: 335px;
+        left: 50%;
+        margin-left: -39px;
+        height: 198px;
+    }
+    .lty-gz {
+        position: absolute;
+        z-index: 100;
+        top: 626px;
+        left: 50%;
+        margin-left: -305px;
+        width: 580px;
+    }
+    .close-btn {
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 100px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 102;
+        $size: 40px;
+        width: $size;
+        height: $size;
+    }
+}
+.lty-result-panel {
+    background: url('../images/dzp_result.png') no-repeat;
+    width: 421px;
+    height: 479px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -260px;
+    z-index: 110;
+    text-align: center;
+    padding-top: 152px;
+    padding-left: 22px;
+    .lty-result-close {
+        position: absolute;
+        top: 76px;
+        right: -10px;
+    }
+    .lty-result-is {
+        font-size: 28px;
+        color: #563216;
+    }
+    .lty-result-name {
+        font-size: 30px;
+        margin: 0px;
+    }
+    .lty-result-count {
+        font-size: 28px;
+        color: #735338;
+        margin: 5px 0px;
+    }
+    .lty-result-text-red {
+        color: #cb372c;
+    }
+    .lty-result-msg {
+        font-size: 24px;
+        color: #66462c;
+    }
+    .lty-result-line {
+        width: 100%;
+        display: inline-block;
+        border: none;
+        border-top: dashed 1px #cb372c;
+        padding: 0px 8px;
+    }
+    .lty-result-btn {
+        width: 186px;
+        height: 65px;
+        line-height: 65px;
+        background: #ff7f1e;
+        border-radius: 10px;
+        border: 1px solid white;
+        font-size: 34px;
+        color: white;
+        display: inline-block;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+.lty-result {
+    position: absolute;
+    z-index: 101;
+    top: -160px;
+    left: 50%;
+    margin-left: -449px;
+    .close-btn {
+        top: 70px;
+        position: absolute;
+        right: -900px;
+        z-index: 1000;
+        display: block;
+        width: 22px;
+        height: 22px;
+    }
+    .lty-result-panel {
+        background: url('../images/pab.png') no-repeat;
+        width: 900px;
+        height: 900px;
+        margin-left: 28px;
+        margin-top: 5px;
+        .lty-result-panel-title {
+            margin-top: 30px;
+            margin-left: -50px;
+        }
+        .lty-result-panel-head {
+            font-size: 26px;
+            margin: 0px;
+            color: #573216;
+            margin-left: -40px;
+            margin-top: 30px;
+            .lty-result-panel-head-num {
+                margin: 0px;
+                font-size: 30px;
+                color: #ab052c;
+            }
+        }
+        .lty-result-panel-body {
+            width: 546px;
+            padding: 0px 30px;
+            height: 470px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin-left: 110px;
+            margin-top: 30px;
+        }
+        .lty-list {
+                margin: 0px;
+                width: 500px;
+                display: block;
+                li {
+                    display: block;
+                }
+                .lty-list-head {
+                    display: inline-block;
+                    span {
+                        font-size: 22px;
+                        color: #573216;
+                        text-align: left;
+                        display: block;
+                        float: left;
+                    }
+                    .lty-item-l {
+                        width: 150px;
+                    }
+                    .lty-item-c {
+                        width: 170px;
+                    }
+                    .lty-item-r {
+                        width: 155px;
+                        text-align: right;
+                        padding-right: 20px;
+                    }
+                    .lty-r {
+                        color:#ab052c;
+                    }
+                }
+
+        }
+        .lty-list-fixed {
+            @extend .lty-list;
+            position: fixed;
+            left: 190px;
+        }
+    }
+
+}

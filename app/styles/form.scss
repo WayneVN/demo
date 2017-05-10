@@ -1,0 +1,194 @@
+.forms {
+  width: 305px;
+  margin: 0 atuo;
+  display: inline-block;
+}
+.forms-lg {
+  @extend .forms;
+  width: 450px;
+}
+
+.form-line {
+  box-sizing: border-box;
+  min-height: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
+  clear: both;
+  font-weight: normal;
+  &::after{
+    clear: both;
+    content: ' ';
+  }
+  &::before {
+    clear: both;
+    content: ' ';
+  }
+  .text-row {
+    display: inline-block;
+    font-size: $base-font-size;
+    color: $color-base-font;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    li {
+      display: inline-block;
+      text-align: left;
+      line-height: 30px;
+      height: 30px;
+      float: left;
+    }
+    li:nth-child(1) {
+      width: 60px;
+    }
+    li:nth-child(2) {
+      width: 135px;
+    }
+    li:nth-child(3) {
+      width: 80px;
+      button {
+        margin: 0;
+      }
+    }
+  }
+  .fa-check-circle-o {
+    font-size: 50px;
+    color:$color-org;
+  }
+  .form-success {
+    font-size: 16px;
+    color:$black;
+    margin-top: 30px;
+  }
+  .form-info {
+    font-size: $base-font-size;
+    color:$grey;
+  }
+  .form-input{
+    padding: 0;
+    padding-left: 8px;
+    font-weight: normal;
+    color:$color-black;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 12px;
+    line-height: 26px;
+    height: 30px;
+    width: 210px;
+    border: 1px solid #e5e4e3;
+    background: $color-input-bg;
+    -webkit-appearance: none;
+    -webkit-transition: background-color .2s ease,box-shadow .2s ease,border .2s ease;
+    transition: background-color .2s ease,box-shadow .2s ease,border .2s ease;
+    &:focus {
+      border: 1px solid silver;
+    }
+  }
+  .form-input-sm {
+    @extend .form-input;
+    width: 126px;
+    float: left;
+  }
+  .error {
+    border: 1px solid $color-error;
+  }
+  .icon-l {
+    position: absolute;
+    left: 14px;
+    top: 0;
+    font-size: 18px;
+    color:silver;
+    line-height: 38px;
+  }
+  .invalid-prompt {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-error;
+    font-size: 12px;
+  }
+  .invalid-prompt-sm {
+    @extend .invalid-prompt;
+    right: 120px;
+  }
+  .invalid-info {
+    @extend .invalid-prompt;
+    color:$color-grey;
+    right: 15px;
+  }
+}
+
+.form-link {
+  width: 211px;
+  margin-bottom: 0;
+  .form-label {
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-btn-grey;
+    cursor: pointer;
+  }
+  .form-check {
+    float: left;
+    margin-top: 1px;
+    margin-right: 5px;
+  }
+}
+
+.required::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 9pt;
+  line-height: 30px;
+}
+
+.panel-left-nav {
+  float: left;
+  width: 110px;
+  height: 200px;
+  border-right: 1px solid $color-modal-border;
+  .left-nav-menu {
+    padding: 1.6rem 0 0;
+    text-align: center;
+    li {
+      position: relative;
+      cursor: pointer;
+      width: 84px;
+      height: 40px;
+      background-color: $color-white;
+      font-size: 16px;
+      color: $color-base-font;
+      display: inline-block;
+      line-height: 40px;
+      border: none;
+      .arr-right {
+        position: absolute;
+        right: -8px;
+        top: 12px;
+        width:0;
+        height:0;
+        display: inline-block;
+        border-top:8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid $color-white;
+      }
+    }
+    .nav-active {
+      .arr-right {
+        border-color:transparent;
+        border-left-color: $color-nav-menu;
+      }
+      background-color: $color-nav-menu;
+      color:$white;
+    }
+  }
+}
+.loginPanel {
+  .title {
+    display: none !important;
+  }
+}

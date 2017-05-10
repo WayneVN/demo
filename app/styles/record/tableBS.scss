@@ -1,0 +1,110 @@
+.table-header {
+  .table {
+    margin: 0;
+    thead {
+      th {
+        background: $color-white;
+        border: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid $color-border-grey;
+        .table-header-column {
+          color:$color-table-head;
+          font-size: 16px;
+          line-height: 32px;
+          width: 110px;
+          padding-left: 16px;
+          font-weight: 400;
+          text-align: inherit;
+          display: inline-block;
+          .fa {
+            @extend .fa;
+            font-size: 13px;
+            padding-left: 4px;
+          }
+        //   .order {
+        //     @extend .fa;
+        //     @extend .fa-sort-amount-asc;
+        //   }
+        //   .dropup {
+        //     @extend .fa;
+        //     @extend .fa-sort-amount-desc;
+        //   }
+
+        }
+      }
+      .sort-column {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.table-container {
+  .table {
+    thead {
+      tr >th {
+        height: 0;
+        border: none;
+        background-color: $color-white;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    tbody {
+      border: none;
+      .tr-red {
+        background-color: $st-color-red-light;
+      }
+      .tr-green {
+        background-color: $st-color-green-light;
+      }
+
+      tr {
+        border:none;
+        border-top: 1px solid $color-table-border;
+        &:nth-child(even) {
+          background: $color-white;
+        }
+        &:nth-child(odd) {
+          background: $color-even-row;
+        }
+        td {
+          border: none;
+          font-size: $base-font-size;
+          line-height: $base-font-size * 2;
+          padding: 0 14px;
+          color:$color-table-font;
+          // width: 134px;
+        }
+        .f-red {
+          color:red;
+        }
+        .f-green {
+          color:#009845;
+        }
+      }
+    }
+  }
+}
+
+.stock {
+  margin-top: 80px;
+  .table-header {
+    .table {
+      margin: 0;
+      thead {
+        th {
+          background: $color-white;
+          border: none;
+          padding: 0;
+          margin: 0;
+          border-bottom: 2px solid $color-border-grey;
+          .table-header-column {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

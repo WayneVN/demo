@@ -1,0 +1,76 @@
+.list-tag {
+  display: inline-block;
+  float: left;
+  color:$color-panel-title;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: normal;
+  list-style: none;
+  li {
+    @include ease(0.3s);
+    cursor: pointer;
+    .list-style-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      margin-bottom: 2px;
+      margin-right: 5px;
+      display: inline-block;
+      line-height: 30px;
+      background-color: $color-panel-title;
+    }
+  }
+  .active {
+    color:$color-org;
+    .list-style-dot {
+      background-color: $color-org;
+    }
+  }
+}
+
+.list-tag-cross {
+  @extend .list-tag;
+  padding-left: 1rem;
+}
+
+.list-tag-row {
+  @extend .list-tag;
+  width: 730px;
+  li {
+    float: left;
+    padding-right: 23px;
+    text-align: left;
+    margin-right: 12px;
+  }
+}
+
+.link-btn {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  font-size: $base-font-size;
+  width: 140px;
+  height: 94px;
+  margin: 0;
+  padding: 0;
+  li {
+    width: inherit;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+  }
+  .item-btn {
+    .btn-default {
+      margin: 0;
+    }
+  }
+
+}
+
+.hr {
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-top: 1px solid $color-border-grey;
+  display: inline-block;
+}

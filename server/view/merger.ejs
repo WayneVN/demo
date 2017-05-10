@@ -1,0 +1,38 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <% if (env == 'www') {%>
+    <meta name="title" content="<%-title%>">
+    <meta name="keywords" content="<%-keyword%>">
+    <meta name="description" content="<%-description%>">
+    <% include ./common/baidu.ejs %>
+    <% } %>
+    <title>九斗</title>
+    <script>
+        window._joudou = <%-_joudou%>;
+    </script>
+
+    <% include ./common/zhuge.ejs %>
+
+</head>
+
+<body>
+    <!--[if IE 8]>
+      <p>您的浏览器版本 <strong>过旧</strong>. 请&nbsp; <a href="http://browsehappy.com/" style="color:red;">点击这里</a>&nbsp;下载新版浏览器！</p>
+    <![endif]-->
+    <div id="content"></div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/merger.js"></script>
+</body>
+
+</html>

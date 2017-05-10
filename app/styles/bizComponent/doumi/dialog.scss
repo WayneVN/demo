@@ -1,0 +1,85 @@
+
+.doumi-dialog {
+    top: 100px;
+    width: 510px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 14px;
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .modal-content {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .title {
+        background-color: #ff5959;
+        color: #fff;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+
+        img {
+            width: 33px;
+            vertical-align: middle;
+        }
+
+        .close-icon {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            line-height: 20px;
+        }
+
+        &.gray {
+            background-color: #666;
+        }
+    }
+
+    .time {
+        display: none;
+    }
+
+    .black-line {
+        background-color: #333;
+        color: #fff;
+        padding: 0 20px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+
+    .content-container {
+        border: $st-border;
+        border-top: none;
+
+        .footer-container {
+            border-top: $st-border;
+            background-color: #f2f2f2;
+            height: 48px;
+            line-height: 48px;
+            padding: 0 20px;
+        }
+    }
+
+    .red-btn {
+        display: inline-block;
+        padding: 0 12px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        background-color: #ff5959;
+    }
+}

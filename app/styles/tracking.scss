@@ -1,0 +1,327 @@
+.tracking-upload-status-warp {
+    $w: 920px;
+    width: $w;
+    margin-bottom: 10px;
+    color: $color-progress-msg;
+    .tracking-upload-panel {
+        width: $w;
+        height: 150px;
+        overflow-y: auto;
+        border: 1px solid $color-table-border;
+    }
+    .tracking-panel-head {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li {
+            display: inline-block;
+            border: none;
+            background-color: #fee6bd;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            border-right: 1px solid white;
+            text-align: center;
+            .fa-file-excel-o {
+                color: #7bc07f;
+                margin-right: 5px;
+            }
+        }
+        li:nth-child(1) {
+            width: 264px;
+        }
+        li:nth-child(2) {
+            width: 216px;
+        }
+        li:nth-child(3) {
+            width: 218px;
+        }
+        li:nth-child(4) {
+            width: 222px;
+            border: none;
+        }
+    }
+    .tracking-panel-row {
+        @extend .tracking-panel-head;
+        li {
+            background: white;
+            line-height: 30px;
+            height: 30px;
+            font-size: 14px;
+            color: #666;
+            border: none;
+            border-box: content;
+            float: left;
+        }
+        li:nth-child(1) {
+            padding: 0px 20px;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        li:nth-child(4) {
+            width: 200px;
+        }
+    }
+}
+
+.tracking-table-warp {
+    position: relative;
+    .tracking-table-mark {
+        width: 960px;
+        height: 500px;
+        position: absolute;
+        background-color: black;
+        opacity:0.2;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .tracking-loading {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -27px;
+        margin-top: -27px;
+    }
+}
+
+.fixedDataTableRowLayout_rowWrapper {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-progress-msg;
+}
+.public_fixedDataTableCell_cellContent {
+    padding: 0px 8px;
+}
+.public_fixedDataTableCell_main {
+    border-color: #fff;
+}
+.public_fixedDataTable_main {
+    border: none;
+}
+.public_fixedDataTable_header .public_fixedDataTableCell_main {
+    background-color: #fee6bd;
+    border-right: 1px solid white;
+    background-image: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    &:last-child {
+        border: none;
+    }
+}
+.public_fixedDataTable_hasBottomBorder {
+    border: none;
+}
+.fixedDataTableCellGroupLayout_cellGroup {
+    .table-head-bg-red {
+        background-color: $color-progress;
+    }
+}
+.fixedDataTableRowLayout_rowWrapper {
+}
+.public_fixedDataTable_header {
+    border: none;
+    line-height: 40px;
+}
+
+
+.container-bg {
+    background-color: #f1f1f1;
+    $border-color: #e6e6e6;
+    .t-panel {
+        width: 960px;
+        margin: 0px auto;
+        border: 1px solid $border-color;
+        background: #fff;
+        margin-bottom: 10px;
+        .t-panel-head {
+            border-bottom: 1px solid $border-color;
+            height: 40px;
+            padding: 0px 20px;
+            overflow: hidden;
+            .t-panel-title {
+                font-size: 16px;
+                color: #333;
+                line-height: 40px;
+                text-align: left;
+                margin: 0px;
+            }
+            .t-panel-btn {
+                font-size: 14px;
+                float: right;
+            }
+        }
+        .t-panel-body
+        {
+            padding: 15px 20px;
+            overflow: hidden;
+            .t-table-warp {
+                position: relative;
+            }
+        }
+    }
+    .t-table-mark {
+        background-color: #000;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        width: 920px;
+        height: 500px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 100;
+        &+.loader {
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            top: 50%;
+            bottom: 50%;
+            z-index: 101;
+            display: block;
+            width: 44px;
+            margin-left: -22px;
+            margin-top: -22px;
+            .line-scale-pulse-out > div {
+                background-color: #fff;
+                opacity: 0.8;
+                filter: alpha(opacity=80);
+            }
+        }
+    }
+
+}
+
+.guidemark-warp {
+    position: relative;
+
+    .guidemark {
+        position: absolute;
+        z-index: 101;
+        top: 0px;
+        left: 90px;
+        width: 619px;
+    }
+    .closemark {
+        position: absolute;
+        z-index: 101;
+        top: 180px;
+        right: 13px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .guideUpload {
+        width: 204px;
+        height: 81px;
+        display: inline-block;
+        position: absolute;
+        background: url('../images/upload_normal.png');
+        z-index: 101;
+        bottom: -20px;
+        left: 50%;
+        margin-left: -104px;
+        &:active {
+            background: url('../images/upload_active.png');
+        }
+    }
+
+}
+.top-guide {
+    margin: 0px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    line-height: 38px;
+    float: left;
+    margin-top: 10px;
+
+}
+
+.demomark-warp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    .demomark {
+        position: absolute;
+        z-index: 3;
+        left: 0px;
+        right: 0px;
+        top: 170px;
+        display: block;
+        margin: auto;
+    }
+}
+.card-mark {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.5;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+
+}
+.cards-img {
+    position: absolute;
+    top: 200px;
+    z-index: 101;
+    left: 50%;
+    right: 0px;
+    margin-left: -210px;
+}
+.card-img-close {
+    width: 30px;
+    position: absolute;
+    top: 309px;
+    z-index: 101;
+    left: 50%;
+    right: 0px;
+    margin-left: 165px;
+}
+.card-panels {
+    width: 300px !important;
+    position: absolute;
+    top: 309px;
+    z-index: 101;
+    left: 50%;
+    margin-left: -140px;
+    text-align: center;
+    h1 {
+        border: none;
+        color: #eb3a00;
+        font-size: 34px;
+    }
+    .card-high {
+        color: #eb3a00;
+    }
+    p {
+        margin: 0px;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000;
+    }
+    .card-info-link {
+        text-align: left;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: 30px;
+        a {
+            color: #284a7d;
+            text-decoration:underline;
+        }
+    }
+}
+.card-btn-img {
+    position: absolute;
+    top: 290px;
+    z-index: 101;
+    left: 50%;
+    margin-left: -70px;
+}

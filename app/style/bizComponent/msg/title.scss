@@ -1,0 +1,125 @@
+.msg-dialog {
+    .msg-component-title {
+        position: relative;
+        z-index: 5;
+        .da-dialog-title {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 35px;
+            color: #333;
+            background-color: #c8e1f9;
+
+            &.red-title {
+                color: #fff;
+                background-color: #fb6d6d;
+            }
+
+            &.green-title {
+                color: #fff;
+                background-color: #55c885;
+            }
+
+            .pdf-icon {
+                width: 20px;
+                vertical-align: middle;
+                position: relative;
+                top: -2px;
+            }
+
+            .text {
+                font-size: 20px;
+            }
+            .name {
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .stock-name {
+                &:hover {
+                    text-decoration: underline;
+                    opacity: 0.8;
+                }
+            }
+
+        }
+        .abstract {
+            clear: both;
+            padding: 0 35px 0 35px;
+            height: 35px;
+            line-height: 35px;
+            position: relative;
+            background-color: #fff;
+            .number {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .right {
+                position: relative;
+                overflow: hidden;
+                height: 36px;
+                width: 500px;
+                text-align: right;
+            }
+
+            .blank {
+                margin-right: 10px;
+            }
+
+            .stock-color-red {
+                color: #ff5959;
+            }
+            .stock-color-green {
+                color: #2aba66;
+            }
+            .price {
+                position: absolute;
+                background-color: #fff;
+                top: -36px;
+                text-align: right;
+                width: 100%;
+            }
+
+            .number-container {
+                .price-number {
+                    font-size: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+
+            .btn-container {
+                display: inline-block;
+                float: right;
+                width: 91px;
+                height: 36px;
+            }
+            .btn {
+                background-color: #ffab35;
+                color: #fff;
+                font-size: 12px;
+                line-height: 12px;
+                border-radius: 0;
+                margin-top: 6px;
+                margin-left: 10px;
+                float: right;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            
+            .grade {
+                color: $st-color-orange;
+            }
+            .grade-tip {
+                right: -500px;
+                top: 36px;
+                td {
+                    width: 120px;
+                    height: 20px;
+                    padding: 0;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

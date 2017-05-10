@@ -1,0 +1,1 @@
+exports.cdnPath = 'https://cdn.joudou.com';

@@ -1,0 +1,298 @@
+.chart-default {
+    width: 620px;
+    margin-left: -30px;
+    margin-top: -60px;
+    height: 320px;
+    display: inline-block;
+}
+
+.chart-lg {
+    @extend .chart-default;
+    width: 855px;
+    margin-left: -81px;
+}
+
+.chart-big {
+    @extend .chart-default;
+    width: 940px;
+    height: 400px;
+    margin-top: 1px;
+}
+
+.chart-md {
+    @extend .chart-default;
+    width: 700px;
+    height: 330px;
+}
+
+.chart-sm {
+    @extend .chart-default;
+    width: 500px;
+    height: 200px;
+    margin-top: 0;
+    margin-left: -120px;
+}
+
+.chart-ratioChart {
+    width: 838px;
+    height: 300px;
+    display: inline-block;
+}
+
+.chart-tip-info {
+    display: none;
+    border: 1px solid #e3e9f7;
+    border-radius: 5px;
+    width: 240px;
+    min-height: 100px;
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 80px;
+    z-index: 1;
+    box-shadow: －5px 10px 5px #888888;
+    .chart-tip-head {
+        padding: 5px;
+        height: 30px;
+        line-height: 20px;
+        text-align: left;
+        width: 100%;
+        background-color: #e3e9f7;
+        color: $black;
+        position: relative;
+        .arrow-l {
+            border-color: transparent #e3e9f7 transparent transparent;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            height: 0;
+            left: -15px;
+            position: absolute;
+            top: 0;
+            width: 0;
+        }
+        .arrow-r {
+            left: 237px;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #e3e9f7;
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    .chart-tip-body {
+        padding: 5px;
+        color: $black;
+        .chart-tip-list {
+            padding: 0;
+            display: inline-block;
+            li {
+                color: $black;
+                display: inline-block;
+                width: 230px;
+                text-align: right;
+                font-size: 12px;
+                .tip-title-l {
+                    float: left;
+                }
+                .tip-title-r {
+                    float: right;
+                }
+            }
+            .tip-list-title {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.chart-merger-bar {
+    margin: 0 auto;
+    width: 440px;
+    .chart-icon {
+        position: absolute;
+        top: 80px;
+        right: -30px;
+        color: $black;
+        font-weight: bold;
+        img {
+            display: inline-block;
+        }
+    }
+    .chart-merger-head {
+        width: 100%;
+        height: 80px;
+        .chart-list-title {
+            margin: 0;
+            padding: 0;
+            .chart-icon {
+                top: 0;
+                right: -80px;
+            }
+            & > li {
+                float: left;
+                color: $color-org;
+                font-size: 14px;
+                list-style: none;
+                position: relative;
+                &:hover {
+                    & > .chart-tip-info {
+                        display: block;
+                    }
+                }
+            }
+            li:last-child {
+                float: right;
+            }
+        }
+        .chart-play-bg {
+            clear: both;
+            display: inline-block;
+            height: 28px;
+            width: 100%;
+            background-color: $color-slider-bg;
+            border-radius: 28px;
+            position: relative;
+            margin-top: 20px;
+            .chart-play-left {
+                font-size: 12px;
+                color: $color-base-font;
+                float: left;
+                margin: 0 34px;
+                line-height: 28px;
+            }
+            .chart-play-right {
+                @extend .chart-play-left;
+                float: right;
+            }
+            .chart-play-warp {
+                position: absolute;
+                width: 54px;
+                height: 54px;
+                border: 4px solid $white;
+                border-radius: 50%;
+                background-color: $color-slider-bg;
+                top: -13px;
+                left: 193px;
+                .chart-play-action {
+                    width: 38px;
+                    height: 38px;
+                    margin: 4px;
+                    border-radius: 50%;
+                    background-color: $white;
+                    text-align: center;
+                    .fa-play {
+                        line-height: 38px;
+                        padding-left: 3px;
+                        color: $color-org;
+                    }
+                    .fa-backward {
+                        line-height: 38px;
+                        color: $color-org;
+                    }
+                }
+            }
+        }
+    }
+    .item-round {
+        border-radius: 50%;
+        margin: 10px auto;
+        color: $white;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        top: 20px;
+        font-size: $base-font-size;
+        &:hover {
+            & > .chart-tip-info {
+                display: block;
+                left: -220px;
+            }
+        }
+    }
+    .chart-merger-body {
+        width: 440px;
+        padding: 10px;
+        .chart-merger-before {
+            display: inline-block;
+            // display: inherit;
+            .chart-m-b {
+                position: relative;
+                width: 210px;
+                height: 100%;
+                float: left;
+            }
+            .chart-m-b-l {
+                @extend .chart-m-b;
+                .item-round {
+                    background-color: $color-org;
+                    height: 120px;
+                    width: 120px;
+                    left: 0;
+                    padding-top: 40px;
+                }
+            }
+            .chart-m-b-r {
+                @extend .chart-m-b;
+                float: right;
+                .item-round {
+                    width: 60px;
+                    background-color: $color-round;
+                    padding-top: 20px;
+                }
+            }
+        }
+        .chart-merger-after {
+            display: inline-block;
+            padding: 10px;
+            .item-round-chart {
+                @extend .item-round;
+                display: none;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: $color-org;
+                z-index: 1;
+                top: 150px;
+                left: 228px;
+                padding-top: 30px;
+            }
+            // overflow: hidden;
+        }
+    }
+}
+
+.lengend {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 263px;
+    padding: 0;
+    li {
+        display: inline-block;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        margin-right: 20px;
+        .span-color {
+            border-radius: 4px;
+            width: 25px;
+            margin-top: 2px;
+            margin-right: 5px;
+            height: 13px;
+            display: block;
+            float: left;
+            line-height: 18px;
+        }
+        .color-org {
+            @extend .span-color;
+            background-color: $color-org;
+        }
+        .color-blue {
+            @extend .span-color;
+            background-color: $color-round;
+        }
+    }
+}
